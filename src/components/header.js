@@ -1,49 +1,51 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, {useState, useEffect} from "react"
+import styled from 'styled-components'
+import {FaBars, FaTimes} from 'react-icons/fa'
+import {NavLogo, Nav, HeaderContainer, MobileIcon, NavItem, NavLink, NavMenu} from '../components/headerElements'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#3A3F85`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <h5 >
-        <Link to="/aboutme/" 
-            style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}>about me</Link> 
-      </h5>
-    </div>
-  </header>
+const Header = () => {
+
+  const [click, setClick]= useState(false)
+
+  const handleClick= () => setClick(!click)
+
+  return(
+  
+  
+    
+    <Nav click={click}>
+      <HeaderContainer>
+        <NavLogo to = "/">
+          SÉRINA CHHEM
+        </NavLogo>
+
+        <MobileIcon onClick={handleClick}>
+          {click ? <FaTimes/> : <FaBars/>}
+        </MobileIcon>
+
+        <NavMenu onClick={handleClick} click={click}>
+          <NavItem>
+            <NavLink to = "/aboutme">À propos</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to = "/work">projets</NavLink>
+          </NavItem>
+          <NavItem>
+           <NavLink to = "/experiences">Expériences</NavLink>
+          </NavItem>
+          <NavItem>
+           <NavLink to = "/contact">Contact</NavLink>
+          </NavItem>
+        </NavMenu>
+        </HeaderContainer>
+    </Nav>
+
+  
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+
 
 export default Header

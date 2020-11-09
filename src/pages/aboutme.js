@@ -1,14 +1,15 @@
 import React from 'react'
 import Footer from '../components/footer'
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from '../components/header'
 
 const AboutPage = () => {
 
     return(
        
            
-    <Layout>
+    <div>
+        <Header/>
     <SEO title="About me" />
     <h1>About me</h1>
         <h5>
@@ -25,7 +26,7 @@ Here are a few technologies I’ve been working with recently :
 - MongoDB
 - Design Thinking </h5>
 <Footer></Footer>
-    </Layout>
+    </div>
         
     )
 }
