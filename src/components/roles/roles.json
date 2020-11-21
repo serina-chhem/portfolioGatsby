@@ -1,0 +1,27 @@
+[
+    {
+        "roles":"PLANNING ET DÉFINITION DU SCOPE",
+        "description":"Avec mon équipe, je définie et priorise les fonctionnalités du produit selon les besoins et motivations du client."
+    },
+    {
+        "roles":"UX DESIGN",
+        "description":"Je conçois aussi l’expérience qu’a un utilisateur avec un produit ou un service."
+    },
+    {
+        "roles":"TRADUCTION DES FEATURES",
+        "description":"Avec l’accord de mes coéquipiers, je m’occupe de traduire les fonctionnalités du produit dans chaque plateforme."
+    },
+    {
+        "roles":"GESTION DE PROJET",
+        "description":"En tant que chef de projet, je m’assure que le projet respecte le cahier des charges."
+    },
+    {
+        "roles":"ÉXECUTION DU DESIGN ET VALIDATION",
+        "description":"Mon équipe et moi définissons les parcours utilisateurs, wireframes, prototypes ainsi que les spécifications design."
+    },
+    {
+        "roles":"VISION PRODUIT ET SERVICE",
+        "description":"Je crée des prototypes et frameworks pour partager la vision ou les principes de design."
+    }
+
+]

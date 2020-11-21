@@ -1,0 +1,38 @@
+[
+    {
+        "img":"../../images/orale.png",
+        "alt":"transmissionOrale",
+        "name": "Remplissage par transmission orale",
+        "description":"Des chirurgiens enregistrent leur rapports à l’aide d’un dictaphone puis les retranscrivent en texte. "
+    },
+    {
+        "img":"../../images/passion.png",
+        "alt":"passionMetier",
+        "name": "Passion pour le métier",
+        "description":"Beaucoup de chirurgiens trouvent leur métier fascinant. D’un autre côté, environ un cinquième (sur 105) de chirurgiens praticiens hospitalier pensent à abandonner leur poste plusieurs fois par mois."
+    },
+    {
+        "img":"../../images/patient.png",
+        "alt":"dossierPatient",
+        "name": "Dossiers patients ",
+        "description":"Un compte-rendu post-opératoire d’un patient constitue son dossier dans les bases de données d’un hôpital."
+    },
+    {
+        "img":"../../images/rapidite.png",
+        "alt":"rapidite",
+        "name": "Rapidité et efficacité",
+        "description":"Les utilisateurs d’assistants vocaux s’attendent ce que la compréhension du langage naturel et les réponses soient rapides et efficaces. "
+    },
+    {
+        "img":"../../images/remplissageManuel.png",
+        "alt":"remplissageManuel",
+        "name": "Remplissage manuel",
+        "description":"Des chirurgiens passent 8 à 15 minutes par patient à enregistrer un compte-rendu manuellement après leurs opérations."
+    },
+    {
+        "img":"../../images/taches.png",
+        "alt":"tachesAdmin",
+        "name": "Tâches administratives",
+        "description":"Sur 14 tâches,18.6% représentent des tâches administratives et sont moins appréciés par le corps chirurgical, en comparaison aux tâches liées aux opérations."
+    }
+]

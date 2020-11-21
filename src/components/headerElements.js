@@ -1,9 +1,8 @@
 import { Link } from "gatsby"
-import React from "react"
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-        height: 80px;
+        height: 70px;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -18,22 +17,25 @@ export const Nav = styled.nav`
         text-decoration: none;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        color: #000;
+        color: #222876;
+        background:${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
+
        
     ` 
 
-    export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div`
     display:flex;
+    background-color:#E6E7EF;
     justify-content:space-between;
-    height:80px;
+    height:70px;
     width: 100%;
-    position: absolute;
+    /* position: sticky; */
     top: 0px;
-    z-index: 10;
+    /* z-index: 10; */
     font-family: "Helvetica Neue";
     margin: 0 auto;
-    max-width: 1600px;
-    padding: 0 150px;
+    max-width: 2000px;
+    padding: 0 auto;
     @media (max-width: 1080px) {
       padding: 0;
     }
@@ -50,13 +52,15 @@ export const Nav = styled.nav`
   export const NavLogo = styled(Link)`
         display: flex;
         align-items: center;
+        text-align:center;
         justify-content: space-between;
-        height: 80px ;
+        height: 70px ;
         font-size: 2rem;
         font-weight: 700;
         text-decoration: none;
         letter-spacing: 1.5px;
         color: #222876;
+        margin-left:15px;
   
   `
 
@@ -117,7 +121,7 @@ export const Nav = styled.nav`
   `
 
   export const NavItem = styled.li`
-    height:80px;
+    height:70px;
     font-size:0.9rem;
     @media screen and (max-width: 960px){
       width:100%;
