@@ -68,7 +68,7 @@ const StyledText = styled.div`
 
 const StyledPic = styled.div`
   position: relative;
-  max-width: 300px;
+  max-width: auto;
   @media (max-width: 768px) {
     margin: 50px auto 0;
     width: 70%;
@@ -77,6 +77,7 @@ const StyledPic = styled.div`
   .img {
         filter: none;
       position: relative;
+      margin:auto auto;
       mix-blend-mode: normal;
       filter: grayscale(100%) contrast(1);
       /* transition: var(--transition); */
@@ -120,15 +121,20 @@ const AboutPage = () => {
             <div className="inner">
       <StyledText>
         <h2 className="medium-heading">
-        Hello ! À partir de février, je serai prête à pourvoir le stage de mes rêves : Product Owner/Manager. 
+        Hello ! Ici, je vais vous montrer que je suis une étudiante déterminée à commencer un stage dans le product management.
         </h2>
         <br/>
         <h2 className="medium-heading">
-        Actuellement à l’ECE Paris en dernière année de cycle ingénieur, j'aime réaliser des projets, en partant du process de l’UX Design au développement de l’application mobile ou web. Mon but est de maximiser la valeur d’un produit et de représenter au mieux l’utilisateur.
+         
+        Certes, je ne suis pas la meilleure mais je fais tout en mon pouvoir pour obtenir ce que je veux. 
+        C'est dans cette optique que je me suis lancée dans le développement de ce portfolio.
+        Dans tout ce que je fais, je tiens à ce que mes projets aient un impact autour de moi. Alors j'espère que mon portfolio fera son effet. 
+        J'ai appris à mener une idée jusqu'au bout avec le stress de finir à temps.
+
         </h2>
         <br/>
         <h2 className="medium-heading">
-        Sur cet incroyable portfolio, vous trouverez les projets que j’ai pu développer, qu’ils soient académiques (en équipe) ou personnels. 
+        Vous trouverez donc les projets que j’ai pu développer, qu’ils soient académiques (en équipe) ou personnels. 
         </h2>
         <br/>
         <h2 className="medium-heading">

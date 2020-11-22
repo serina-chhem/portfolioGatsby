@@ -198,9 +198,9 @@ function getUS(data){
          
             <Roles/>
 
-            <StyledPic key={data.shiroPhotos.edges[0].node.id}>
-                 <Image fluid={data.shiroPhotos.edges[0].node.childImageSharp.fluid} 
-                 alt =  {data.shiroPhotos.edges[0].node.base}
+            <StyledPic key={data.shiroPhotos.edges[3].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[3].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[3].node.base}
                  className="img"/>
             </StyledPic>
 
@@ -259,6 +259,12 @@ function getUS(data){
         <p>Nous avons décidé de commencer par le rapport des opérations. Le chirurgien s’attend à ce qu’un assistant vocal comprenne rapidement son langage et que la conversation soit fluide. Nous souhaitons développer notre assistant Shiro sur une interface accessible depuis un poste de travail (ordinateur), sous forme d’application.</p>
         <p>Avec mon équipe, nous avons l’intention de répandre les assistants vocaux dans les hôpitaux pour optimiser et moderniser le travail secondaire du corps chirurgical. </p>
 
+        <StyledPic key={data.shiroPhotos.edges[0].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[0].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[0].node.base}
+                 className="img"/>
+        </StyledPic>
+
         <h4>ELEVATOR PITCH </h4>
 
         <p>« Pour les chirurgiens, qui veulent optimiser leurs tâches secondaires, Shiro est un assistant vocal qui remplit rapidement les comptes-rendus opératoires. Contrairement à Google Home ou Amazon Alexa, notre solution s’inscrit dans le domaine hospitalier et est accessible sur une application.»</p>
@@ -271,18 +277,18 @@ function getUS(data){
         <p>Les activités (en orange sur l'image ci-dessous) représentent ce que fait le chirurgien lorsqu'il arrive sur notre application: en premier il s'identifie en tant qu'opérateur principal, ensuite il demande d'ouvir un CRO vierge, puis le remplit etc. </p>
         <p>La ligne des User Stories représentent comment le chirurgien parvient à son activité : pour s'identifier, il invoque d'abord Shiro en disant "C'est parti Shiro", et seulement à ce moment-là il pourra s'identifier, remplir son compte-rendu etc. </p>
        
-        <StyledPic key={data.shiroPhotos.edges[1].node.id}>
-                 <Image fluid={data.shiroPhotos.edges[1].node.childImageSharp.fluid} 
-                 alt =  {data.shiroPhotos.edges[1].node.base}
+        <StyledPic key={data.shiroPhotos.edges[2].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[2].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[2].node.base}
                  className="img"/>
         </StyledPic>
 
         <h4>PRIORISATION ET RELEASES</h4>
         <h2>MoSCow - MUST, SHOULD, COULD OR WOULD HAVE</h2>
         <p>En utilisant cette méthode de priorisation, j’ai découpé les users stories de la manière suivante :</p>
-        <StyledPic key={data.shiroPhotos.edges[2].node.id}>
-                 <Image fluid={data.shiroPhotos.edges[2].node.childImageSharp.fluid} 
-                 alt =  {data.shiroPhotos.edges[2].node.base}
+        <StyledPic key={data.shiroPhotos.edges[1].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[1].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[1].node.base}
                  className="img"/>
         </StyledPic>
         
@@ -297,9 +303,9 @@ function getUS(data){
         <h4>QUE CHERCHE T-ON À VALIDER ?</h4>
         <p>Pour chaque user stories, voici les interactions que je souhaite tester ou valider : </p>
         
-        <p >ACTIVATION : Quelle est la meilleure manière d’invoquer Shiro ? (Oral ou via application ?)</p>
-        <p >IDENTIFICATION : Comment s’identifie le chirurgien ?</p>
-        <p >RAPPORTER : Par quoi commence le chirurgien pour remplir le CR ? </p>
+        <p ><span>ACTIVATION </span>: Quelle est la meilleure manière d’invoquer Shiro ? (Oral ou via application ?)</p>
+        <p ><span>IDENTIFICATION </span>: Comment s’identifie le chirurgien ?</p>
+        <p ><span>RAPPORTER </span>: Par quoi commence le chirurgien pour remplir le CR ? </p>
         <h4>RÉSULTATS ATTENDUS </h4>
         <p> À la fin du premier sprint, nous comptons valider le parcours utilisateur, le début du flow conversationnel entre le chirurgien et l’assistant vocal. </p>
         
@@ -310,12 +316,19 @@ function getUS(data){
         </div>
 
         <h4>QUE CHERCHE T-ON À VALIDER ?</h4>
-        <p >TRANSFORMATION : Quelle est la meilleure façon d’afficher le texte sur l’application ? </p>
-        <p >FEEDBACK : Que dit le chirurgien pour accéder à son historique ?</p>
-        <p >MODIFICATION : Que dit le chirurgien pour modifier un CR ?</p>
+        <p > <span>TRANSFORMATION </span>: Quelle est la meilleure façon d’afficher le texte sur l’application ? </p>
+        <p > <span>FEEDBACK</span> : Que dit le chirurgien pour accéder à son historique ?</p>
+        <p ><span>MODIFICATION</span> : Que dit le chirurgien pour modifier un CR ?</p>
         <h4>RÉSULTATS ATTENDUS </h4>
         <p>À la fin du deuxième sprint, nous voulons valider l’activité de transformation de la voix en texte et la collecte d’informations. Nous souhaitons également récolter des feedbacks sur la fluidité des interactions. </p>
+        
+        <h4>merci d'être arrivé jusque-là !</h4>
 
+        <h2>PERSPECTIVES</h2>
+
+        <p>J'ai décidé d'arrêter cette analyse ici puisque je voulais me concentrer sur le processus d'UX Design.  </p>
+        <p>Cette étude étant la première que j'effectue pour le développement de mon portfolio, je souhaite obtenir des retours pour améliorer mes prochaines études. </p>
+        <p>Alors n'hésitez pas à me donner vos avis, j'adore l'honnêteté !</p>
 
         </StyledShiro>
        

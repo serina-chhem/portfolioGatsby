@@ -66,7 +66,7 @@ const Work = () => {
       
 
 
-        <Footer/>
+        {/* <Footer/> */}
 
         </div>
         
