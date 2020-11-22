@@ -96,7 +96,7 @@ const AboutPage = () => {
 
     const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "me.png"}) {
+      file(relativePath: {eq: "me.jpeg"}) {
         childImageSharp {
           fixed(width: 600, height: 750) {
             ...GatsbyImageSharpFixed
