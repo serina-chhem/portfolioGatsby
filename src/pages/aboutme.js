@@ -95,7 +95,7 @@ const AboutPage = () => {
 
     const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "gatsby-icon.png"}) {
+      file(relativePath: {eq: "me.png"}) {
         childImageSharp {
           fixed(width: 600, height: 750) {
             ...GatsbyImageSharpFixed
@@ -105,7 +105,7 @@ const AboutPage = () => {
     }
   `)
 
-    const skills = ['UX Design', 'Méthode Scrum', 'Design Thinking', 'React', 'Node.js', 'DevOps'];
+    const skills = ['UX Design', 'Méthode Scrum', 'Design Thinking', 'React', 'Node.js', 'Micro-services Cloud'];
 
     return(
        
@@ -120,11 +120,11 @@ const AboutPage = () => {
             <div className="inner">
       <StyledText>
         <h2 className="medium-heading">
-        Hello ! À partir de février, je serai disponible pour décrocher le poste de mes rêves : Product Owner. 
+        Hello ! À partir de février, je serai prête à pourvoir le stage de mes rêves : Product Owner/Manager. 
         </h2>
         <br/>
         <h2 className="medium-heading">
-        Actuellement à l’ECE Paris en dernière année de cycle ingénieur, j'aime réaliser des projets, en partant du process de l’UX Design au développement de l’application mobile ou web. Mon but est de maximiser la valeur d’un produit et de représenter au mieux l’utilisateur ou le client.
+        Actuellement à l’ECE Paris en dernière année de cycle ingénieur, j'aime réaliser des projets, en partant du process de l’UX Design au développement de l’application mobile ou web. Mon but est de maximiser la valeur d’un produit et de représenter au mieux l’utilisateur.
         </h2>
         <br/>
         <h2 className="medium-heading">
@@ -132,7 +132,7 @@ const AboutPage = () => {
         </h2>
         <br/>
         <h2 className="medium-heading">
-        Voici les technologies sur lesquels j’ai travaillé au cours de mon expérience :
+        Voici les notions et compétences que j'ai acquises au cours de mon expérience :
         </h2>
 
         <ul className="skills-list">

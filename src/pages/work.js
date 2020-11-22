@@ -51,9 +51,9 @@ const Work = () => {
                     <div>
                         {data.allMarkdownRemark.edges.map(({node}) => (
                             <Post title={node.frontmatter.title}
-                                // author={node.frontmatter.author}
+                                
                                 path={node.frontmatter.path}
-                                // date={node.frontmatter.date}
+            
                                 body={node.excerpt}
                                 />
                         ) )}

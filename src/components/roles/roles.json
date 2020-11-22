@@ -1,15 +1,16 @@
 [
-    {
-        "roles":"PLANNING ET DÉFINITION DU SCOPE",
-        "description":"Avec mon équipe, je définie et priorise les fonctionnalités du produit selon les besoins et motivations du client."
-    },
+
     {
         "roles":"UX DESIGN",
-        "description":"Je conçois aussi l’expérience qu’a un utilisateur avec un produit ou un service."
+        "description":"Je m'occupe de concevoir l’expérience qu’a un utilisateur avec un produit ou un service."
+    },
+    {
+        "roles":"PLANNING ET DÉFINITION DU SCOPE",
+        "description":"Avec mon équipe, je définie et priorise les fonctionnalités du produit selon les besoins et motivations de l'utilisateur."
     },
     {
         "roles":"TRADUCTION DES FEATURES",
-        "description":"Avec l’accord de mes coéquipiers, je m’occupe de traduire les fonctionnalités du produit dans chaque plateforme."
+        "description":"Je traduis également les fonctionnalités du produit dans chaque plateforme."
     },
     {
         "roles":"GESTION DE PROJET",

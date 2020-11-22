@@ -35,11 +35,69 @@ section{
 
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:100px;
+    padding: 0 2rem;
+    justify-items:center;
+
+    @media screen and (max-width:1200px){
+        grid-template-columns:1fr 1fr;
+    }
+
+    @media screen and (max-width:868){
+        grid-template-columns:1fr;
+    }
+}
+
+.titleForWrapper{
+  text-align:center;
+    margin: 10px auto;
+    font-style: normal;
+    font-weight: bold;
+    line-height:1rem;
+    font-size: 1rem;
+    color: rgba(27,60,170,1);
+}
+
+.descriptionForWrapper{
+  line-height:1.3rem;
+  color:#1B3CAA;
+  text-align: center;   
+  font-weight:lighter;
+  font-size:15px;     
+  max-width: 300px;
+}
+
 .text-info{
   font-family: $font;
     color: #1B3CAA;
     font-weight: 300;
     font-size:clamp(10px, 4vw, 30px);
+}
+
+.cardWrapper{
+  line-height:2r;
+    width:150px;
+    height:150px;
+    align-items:center;
+}
+
+.infoWrapper{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 0 0;
+    margin:15px auto;
+
+    @media screen and (max-width:280px){
+        padding:0 1 rem;
+    }
+}
+
+.textwrap{
+  align-items: center;
 }
 
 h3{
@@ -55,7 +113,7 @@ h2,
 h4,
 h5,
 h6 {
-  margin: 0 0 0 0;
+  margin: 50px 0 30px 0;
   font-weight: 600;
   font-family: $font;
   color: #1B3CAA;
@@ -75,7 +133,7 @@ p{
   margin: 10px 0;
   justify-content:center;
   line-height: 20px;
-  max-width: 800px;
+  max-width: 950px;
   text-align: center;
   font-style: normal;
   font-weight: lighter;
@@ -83,3 +141,87 @@ p{
   color: rgba(34,40,118,1);
 }
 
+span{
+  font-weight: normal;
+  color:#1B3CAA;
+}
+
+.whyUs{
+  width:400px;
+  text-align: left;
+  display: grid;
+  font-weight: normal;
+
+  font-size: 15px;
+  color:#0089FF;
+  grid-template-columns: repeat(1, 400px);
+  margin: auto 0;
+  padding: 0 2rem;
+
+  @media screen and (max-width:1200px){
+      grid-template-columns:1fr;
+  }
+
+  @media screen and (max-width:868){
+      grid-template-columns:1fr;
+  }
+}
+
+.whyUser{
+  width:400px;
+  display: grid;
+  color:#1B3CAA;
+  left: 50%;
+  font-weight: normal;
+  font-size: 15px;
+  margin: auto 0;
+  position: relative;
+ 
+}
+
+.contact-page {
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+}
+
+.contact-form {
+  background: #E6E7EF;
+  border-radius: 0.25rem;;
+  text-align: center;
+  // box-shadow: var(--light-shadow);
+  // transition: var(--transition);
+  width: 90vw;
+  max-width: 35rem;
+}
+
+.form-group {
+  padding: 1rem 1.5rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding-top: 1rem ;
+  padding-bottom: 2rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: #fff;
+  border-radius: 0.25rem;;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.form-control::placeholder {
+  font-family: $font;
+  color: #1B3CAA;
+  letter-spacing: 0.2rem;
+}
+.submit-btn {
+  display: block;
+  font-family: $font;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius:0.25rem ;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}

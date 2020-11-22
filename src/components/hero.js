@@ -36,8 +36,8 @@ const Hero = () => {
     
         <StyledHero>
             <h3 className="medium-heading">Bienvenue ! Je suis Sérina, </h3>
-            <h1 className="big-heading">Une étudiante en Design Thinking et Technologies Web</h1> 
-            <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, Product Owner, ou Dev Front-End je suis ouverte aux opportunités.</h2>
+            <h1 className="big-heading">Une étudiante ingénieure passionée par le Design Thinking.</h1> 
+            <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, Product Owner/Manager, je serai ravie de vous aider à maximiser la valeur de votre produit !</h2>
            
         </StyledHero>
       

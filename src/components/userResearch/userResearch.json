@@ -9,7 +9,7 @@
         "img":"../../images/passion.png",
         "alt":"passionMetier",
         "name": "Passion pour le métier",
-        "description":"Beaucoup de chirurgiens trouvent leur métier fascinant. D’un autre côté, environ un cinquième (sur 105) de chirurgiens praticiens hospitalier pensent à abandonner leur poste plusieurs fois par mois."
+        "description":"Environ un cinquième (sur 105) de chirurgiens praticiens hospitalier pensent à abandonner leur poste plusieurs fois par mois."
     },
     {
         "img":"../../images/patient.png",
@@ -21,7 +21,7 @@
         "img":"../../images/rapidite.png",
         "alt":"rapidite",
         "name": "Rapidité et efficacité",
-        "description":"Les utilisateurs d’assistants vocaux s’attendent ce que la compréhension du langage naturel et les réponses soient rapides et efficaces. "
+        "description":"Les utilisateurs d’assistants vocaux s’attendent à ce que la compréhension du langage naturel et les réponses soient rapides et fluides. "
     },
     {
         "img":"../../images/remplissageManuel.png",
@@ -33,6 +33,6 @@
         "img":"../../images/taches.png",
         "alt":"tachesAdmin",
         "name": "Tâches administratives",
-        "description":"Sur 14 tâches,18.6% représentent des tâches administratives et sont moins appréciés par le corps chirurgical, en comparaison aux tâches liées aux opérations."
+        "description":"Sur 14 tâches,18.6% sont administratives et moins appréciés par les spécialistes, en comparaison aux interventions chirurgicales."
     }
 ]

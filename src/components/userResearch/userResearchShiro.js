@@ -5,24 +5,19 @@ import styled from 'styled-components'
 
 
 const UserResearchContainer = styled.section`
-    min-height:100vh;
-    /* padding: 5rem calc((100vw - 1300px)/2); */
+    min-height:auto;
+    margin:auto auto;
+    padding-top:0;
+    padding-bottom:13rem;
+`
 
-`
-const UserResearchHeading = styled.div`
-    text-align:center;
-    margin: 0 auto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1rem;
-    color: rgba(27,60,170,1);
-`
-const UserResearchWrapper = styled.div`
+
+const URWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:200px;
+    padding: auto 2rem;
     justify-items:center;
-    padding: 0 2rem;
 
     @media screen and (max-width:1200px){
         grid-template-columns:1fr 1fr;
@@ -32,16 +27,9 @@ const UserResearchWrapper = styled.div`
         grid-template-columns:1fr;
     }
 
-
 `
 
-const URCard = styled.div`
-    line-height:2;
-    width:150px;
-    height:150px;
-   
 
-`
 
 const URImg = styled(Img)`
 
@@ -52,8 +40,6 @@ const URImg = styled(Img)`
     margin: auto auto;
 }
     
-   
-
 
 `
 const URInfo = styled.div`
@@ -61,7 +47,7 @@ const URInfo = styled.div`
     flex-direction:column;
     align-items: flex-start;
     padding: 0 0;
-    /* width:100px; */
+
     margin:15px auto;
 
     @media screen and (max-width:280px){
@@ -69,31 +55,8 @@ const URInfo = styled.div`
     }
 
 `
-const TextWrap = styled.div`
-    /* display:flex; */
-    align-items:center;
-    /* position:absolute; */
-    
-`
 
-const URTitle = styled.div`
 
-    text-align:center;
-    margin: auto auto;
-    font-style: normal;
-    font-weight: bold;
-    line-height:0.9rem;
-    font-size: 1rem;
-    color: rgba(27,60,170,1);
-`
-
-const URDescription = styled.div`
-    p{
-        line-height:0.9rem;
-        font-size: 1rem;
-        text-align: center;        
-    }
-`
 
 
 const UserResearchShiro = () => {
@@ -124,26 +87,26 @@ function getUR(data){
     const URArray = []
     data.allUserResearchJson.edges.forEach((item, index)=>{
         URArray.push(
-            <URCard key={index}>
+            <div key={index} className="cardWrapper">
                 <URImg src={item.node.img.childImageSharp.fluid.src} 
                     fluid={item.node.img.childImageSharp.fluid}
                     alt={item.node.alt} 
                     className="img"/>
-                <URInfo>
-                    <TextWrap>
-                        <URTitle>
+                <div className="infoWrapper">
+                    <div className="textwrap">
+                        <div className="titleForWrapper">
                             {item.node.name}
-                        </URTitle>
-                        <URDescription>
-                        <p>
+                        </div>
+                        <div className="descriptionForWrapper">
+                      
                             {item.node.description}
-                        </p>
-                        </URDescription>
+                    
+                        </div>
                         
-                    </TextWrap>
-
-                </URInfo>
-            </URCard>
+                    </div>
+                    
+                </div>
+            </div>
         )
     })
     return URArray
@@ -152,13 +115,10 @@ function getUR(data){
 
     return(
         <UserResearchContainer>
-            <UserResearchHeading>
-
-            </UserResearchHeading>
-               
-            <UserResearchWrapper>
+        
+            <URWrapper>
             {getUR(data)}
-            </UserResearchWrapper>
+            </URWrapper>
         </UserResearchContainer>
     )
 }
