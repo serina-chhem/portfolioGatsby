@@ -24,16 +24,18 @@ const StyledAboutMe = styled.section`
   }
     
   }
-  h2 {
-    color: #222876;
+  p {
+    color: var(--bleu-vert);
+    justify-content: left;
     line-height: 1.5;
     font-weight: 400;
     font-size:1.1rem;
+    font-weight:lighter;
 
   }
 
   h5{
-    color: #1B3CAA;
+    color: var(--bleu-brillant);
     line-height: 1.5;
     font-weight: 400;
     font-size:1.1rem;
@@ -50,18 +52,19 @@ const StyledText = styled.div`
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
-    color: #222876;
+    font-weight:lighter;
+    color: var(--bleu-vert-fonce);
     li {
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
-      font-family: "Helvetica Neue";
+      font-family: var(--font);
       font-size: 1rem;
       &:before {
         content: '▹';
         position: absolute;
         left: 0;
-        color: #1B3CAA;
+        color: var(--bleu-vert-fonce);
         font-size: 1.2rem;
         line-height: 12px;
       }
@@ -127,25 +130,30 @@ const AboutPage = () => {
 
             <div className="inner">
       <StyledText>
-        <h2 className="medium-heading">
-        Hello ! Ici, je vais vous montrer que je suis une étudiante déterminée à commencer un stage dans le product management.
-        </h2>
+        <p className="medium-heading">
+          <span>
+        Hello ! A travers ce portfolio, vous allez apprendre à me connaitre et voir de quelle manière j'aborde mes projets.
+          </span>
+        </p>
         <br/>
-        <h2 className="medium-heading">
+        <p className="medium-heading">
          
-        C'est dans cette optique que je me suis lancée dans le développement de ce portfolio.
+  
         Dans tout ce que je fais, je tiens à ce que mes projets aient un impact autour de moi. 
-        Et aujourd'hui, je me lance dans le product management pour apporter une expérience unique aux utilisateurs.
+        Et aujourd'hui, je souhaite me lancer dans le product management pour apporter une expérience pertinente aux utilisateurs.
 
-        </h2>
+        </p>
         <br/>
-        <h2 className="medium-heading">
+        <p className="medium-heading">
+          <span>
         Vous trouverez donc les projets que j’ai pu développer, qu’ils soient académiques (en équipe) ou personnels. 
-        </h2>
+          </span>
+        </p>
+
         <br/>
-        <h2 className="medium-heading">
+        <p className="medium-heading">
         Voici les notions et compétences que j'ai acquises au cours de mon expérience :
-        </h2>
+        </p>
 
         <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}

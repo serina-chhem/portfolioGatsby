@@ -23,7 +23,7 @@ const StyledShiro = styled.section`
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
-        color: rgba(27,60,170,1);
+        color: var(--bleu-vert);
     }
     h5{
         margin: 50px;
@@ -31,7 +31,7 @@ const StyledShiro = styled.section`
         font-style: normal;
         font-weight: lighter;
         font-size: 45px;
-        color: rgba(34,40,118,1);
+        color: var(--bleu-vert-fonce);
     }
     h6{
         margin: 50px;
@@ -39,14 +39,7 @@ const StyledShiro = styled.section`
         font-style: normal;
         font-weight: lighter;
         font-size: 18px;
-        color: rgba(34,40,118,1);
-    }
-    h2{
-        text-align: center;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        color: rgba(27,60,170,1);
+        color: var(--bleu-fonce);
     }
     h4{
         white-space: nowrap;
@@ -55,7 +48,7 @@ const StyledShiro = styled.section`
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
-        color: rgba(34,40,118,1);
+        color: var(--bleu-fonce);
         text-transform: uppercase;
     }
     h2{
@@ -66,13 +59,14 @@ const StyledShiro = styled.section`
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
-        color: rgba(27,60,170,1);
+        color: var(--saumon);
         text-transform: uppercase;
     }
     p{
         text-align:left;
         margin-bottom:30px;
         line-height:1.3;
+
     }
    
     
@@ -102,7 +96,7 @@ const StyledPic = styled.div`
 const Shiro = () => {
     const data = useStaticQuery(graphql`
     query{
-        shiroPhotos:allFile(filter: {extension: {regex: "/(jpg)|(png)/"}, relativeDirectory: {eq: "imagesShiroPage"}}) {
+        shiroPhotos:allFile(filter: {extension: {regex: "/(jpg)|(png)/"}, relativeDirectory: {eq: "imagesShiroPage"}}, sort: {fields: base, order: ASC}) {
             edges {
               node {
                 id
@@ -198,9 +192,9 @@ function getUS(data){
          
             <Roles/>
 
-            <StyledPic key={data.shiroPhotos.edges[3].node.id}>
-                 <Image fluid={data.shiroPhotos.edges[3].node.childImageSharp.fluid} 
-                 alt =  {data.shiroPhotos.edges[3].node.base}
+            <StyledPic key={data.shiroPhotos.edges[0].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[0].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[0].node.base}
                  className="img"/>
             </StyledPic>
 
@@ -289,9 +283,9 @@ function getUS(data){
         <h2>MoSCow - MUST, SHOULD, COULD OR WOULD HAVE</h2>
         <p>En utilisant cette méthode de priorisation, j’ai découpé les users stories de la manière suivante :</p>
         
-        <StyledPic key={data.shiroPhotos.edges[0].node.id}>
-                 <Image fluid={data.shiroPhotos.edges[0].node.childImageSharp.fluid} 
-                 alt =  {data.shiroPhotos.edges[0].node.base}
+        <StyledPic key={data.shiroPhotos.edges[3].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[3].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[3].node.base}
                  className="img"/>
         </StyledPic>
      

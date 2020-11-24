@@ -3,11 +3,14 @@ import React from "react"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
-  <div>
+
+  <section>
+  <body>
     <SEO title="404: Not found" />
     <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+    <p>Je suis actuellement en train de travailler sur cette étude. <br/> <br/> Mais restez à l'écoute, ca va arriver très vite !</p>
+  </body>
+  </section>
 )
 
 export default NotFoundPage

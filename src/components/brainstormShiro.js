@@ -43,18 +43,18 @@ const StyledText = styled.div`
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
-    color: #222876;
+    color: var(--bleu-brillant);
     li {
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
-      font-family: "Helvetica Neue";
+      font-family: var(--font);
       font-size: 1rem;
       &:before {
         content: '▹';
         position: absolute;
         left: 0;
-        color: #1B3CAA;
+        color: var(--bleu-brillant);
         font-size: 1.2rem;
         line-height: 12px;
       }

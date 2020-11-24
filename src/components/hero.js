@@ -11,7 +11,7 @@ const StyledHero = styled.section`
     h1 {
         margin: 0 0 30px 4px;
         margin-top: 20px;
-        color: #1B3CAA;
+        color: var(--bleu-vert);
         line-height: 1.5;
         font-size: clamp(40px, 8vw, 60px);
         font-weight: 200;
@@ -21,11 +21,12 @@ const StyledHero = styled.section`
   }
   h2 {
     margin-top: 10px;
-    color: #222876;
+    color: var(--bleu-vert-fonce);
     line-height: 1.8;
     font-weight: 150;
 
   }
+  
   
 `
 
@@ -35,8 +36,8 @@ const Hero = () => {
     return(
     
         <StyledHero>
-            <h3 className="medium-heading">Bienvenue sur mon portfolio minimaliste !  </h3>
-            <h1 className="big-heading">Je suis Sérina, et je compte vous faire souvenir de moi.</h1> 
+            <h3 className="medium-heading">Bienvenue ! Je suis Sérina, </h3>
+            <h1 className="big-heading">Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.</h1> 
             <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>
            
         </StyledHero>

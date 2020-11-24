@@ -20,7 +20,7 @@ const PersonaContainer = styled.section`
 
     p{
         font-size:15px;
-        font-weight:normal;
+        font-weight:lighter;
     }
 `
 
@@ -66,13 +66,13 @@ const PersonaShiro = () => {
                 <Img fixed={data.image.childImageSharp.fixed } alt = "Persona" className="img"/>
        
         </PersonaPic>
-        
+            <p>
             Thomas  est un père de famille  de 38 ans et pratique  depuis 6 ans la chirurgie cardiovasculaire  à  l’hôpital. <br/> <br/>Il  est familier avec  les nouvelles technologies, utilise son iMac comme poste de travail et son  smartphone  tous les jours.  Thomas  possède  une Google Home  chez lui et pense que l’assistant vocal  va  représenter  la  troisième  interface homme-machine  la  plus importante  après notre ordinateur et smartphone.    
             <br/> <br/>
             Il est passionné par son métier et est dans sa "bulle" en bloc opératoire.  S’il ne passe pas son temps avec un patient ou à opérer, Thomas  ne se sent pas utile.  Il a conscience que les tâches administratives sont importantes mais souhaite les optimiser un maximum. 
             <br/><br/>
             Le stress et l’anxiété étant des sentiments omniprésents  lorsqu’il enfile sa blouse, Thomas  trouve une échappatoire  lorsqu’il rentre auprès de sa famille. C’est pour cette raison qu’il souhaite passer davantage de temps avec ses proches.   
-       
+            </p>
         </div>
         
 
