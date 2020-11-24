@@ -35,11 +35,12 @@ const Hero = () => {
     return(
     
         <StyledHero>
-            <h3 className="medium-heading">Bienvenue ! Je suis Sérina, </h3>
-            <h1 className="big-heading">Une étudiante ingénieure passionée par le Design Thinking.</h1> 
-            <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, Product Owner/Manager, je serai ravie de vous aider à maximiser la valeur de votre produit !</h2>
+            <h3 className="medium-heading">Bienvenue sur mon portfolio minimaliste !  </h3>
+            <h1 className="big-heading">Je suis Sérina, et je compte vous faire souvenir de moi.</h1> 
+            <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>
            
         </StyledHero>
+        
       
        
    

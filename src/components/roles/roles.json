@@ -6,7 +6,7 @@
     },
     {
         "roles":"PLANNING ET DÉFINITION DU SCOPE",
-        "description":"Avec mon équipe, je définie et priorise les fonctionnalités du produit selon les besoins et motivations de l'utilisateur."
+        "description":"Avec mon équipe, je définis et priorise les fonctionnalités du produit selon les besoins et motivations de l'utilisateur."
     },
     {
         "roles":"TRADUCTION DES FEATURES",
@@ -17,7 +17,7 @@
         "description":"En tant que chef de projet, je m’assure que le projet respecte le cahier des charges."
     },
     {
-        "roles":"ÉXECUTION DU DESIGN ET VALIDATION",
+        "roles":"EXÉCUTION DU DESIGN ET VALIDATION",
         "description":"Mon équipe et moi définissons les parcours utilisateurs, wireframes, prototypes ainsi que les spécifications design."
     },
     {

@@ -51,7 +51,7 @@ const StyledShiro = styled.section`
     h4{
         white-space: nowrap;
         text-align: left;
-        font-family: Helvetica Neue;
+        font-family: var(--font);
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -62,7 +62,7 @@ const StyledShiro = styled.section`
         margin:30px auto;
         line-height: 1.3;
         text-align: left;
-        font-family: Helvetica Neue;
+        font-family: var(--font);
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
@@ -244,7 +244,7 @@ function getUS(data){
 
         <h4>l'approche</h4>
         <h2>recherche utilisateur</h2>
-        <p>Suite à l’établissement du proto-persona, voici les points clés que nous avons retenu de notre recherche :</p>
+        <p>Suite à l’établissement du proto-persona, voici les points clés que nous avons retenus de notre recherche :</p>
 
         <UserResearchShiro/>
 
@@ -259,11 +259,13 @@ function getUS(data){
         <p>Nous avons décidé de commencer par le rapport des opérations. Le chirurgien s’attend à ce qu’un assistant vocal comprenne rapidement son langage et que la conversation soit fluide. Nous souhaitons développer notre assistant Shiro sur une interface accessible depuis un poste de travail (ordinateur), sous forme d’application.</p>
         <p>Avec mon équipe, nous avons l’intention de répandre les assistants vocaux dans les hôpitaux pour optimiser et moderniser le travail secondaire du corps chirurgical. </p>
 
-        <StyledPic key={data.shiroPhotos.edges[0].node.id}>
-                 <Image fluid={data.shiroPhotos.edges[0].node.childImageSharp.fluid} 
-                 alt =  {data.shiroPhotos.edges[0].node.base}
+        <StyledPic key={data.shiroPhotos.edges[1].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[1].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[1].node.base}
                  className="img"/>
         </StyledPic>
+        
+        
 
         <h4>ELEVATOR PITCH </h4>
 
@@ -276,22 +278,23 @@ function getUS(data){
         </p>
         <p>Les activités (en orange sur l'image ci-dessous) représentent ce que fait le chirurgien lorsqu'il arrive sur notre application: en premier il s'identifie en tant qu'opérateur principal, ensuite il demande d'ouvir un CRO vierge, puis le remplit etc. </p>
         <p>La ligne des User Stories représentent comment le chirurgien parvient à son activité : pour s'identifier, il invoque d'abord Shiro en disant "C'est parti Shiro", et seulement à ce moment-là il pourra s'identifier, remplir son compte-rendu etc. </p>
-       
         <StyledPic key={data.shiroPhotos.edges[2].node.id}>
                  <Image fluid={data.shiroPhotos.edges[2].node.childImageSharp.fluid} 
                  alt =  {data.shiroPhotos.edges[2].node.base}
                  className="img"/>
         </StyledPic>
+        
 
         <h4>PRIORISATION ET RELEASES</h4>
         <h2>MoSCow - MUST, SHOULD, COULD OR WOULD HAVE</h2>
         <p>En utilisant cette méthode de priorisation, j’ai découpé les users stories de la manière suivante :</p>
-        <StyledPic key={data.shiroPhotos.edges[1].node.id}>
-                 <Image fluid={data.shiroPhotos.edges[1].node.childImageSharp.fluid} 
-                 alt =  {data.shiroPhotos.edges[1].node.base}
+        
+        <StyledPic key={data.shiroPhotos.edges[0].node.id}>
+                 <Image fluid={data.shiroPhotos.edges[0].node.childImageSharp.fluid} 
+                 alt =  {data.shiroPhotos.edges[0].node.base}
                  className="img"/>
         </StyledPic>
-        
+     
         <p>J’ai découpé le groupe « Must » en deux MVP dispersés sur deux sprints. En ayant choisi la haute fidélité, nos MVP se rapprocheront le plus de notre produit final. </p>
         <p>Ci-dessous se trouvent les user stories du MVP 1 dans lequel je souhaite valider le parcours qui apporte la première valeur à l’utilisateur. Ici, il s’agit des interactions entre le chirurgien et l’assistant vocal. </p>
         <h2>user stories - mvp 1</h2>
@@ -301,7 +304,7 @@ function getUS(data){
         </div>
 
         <h4>QUE CHERCHE T-ON À VALIDER ?</h4>
-        <p>Pour chaque user stories, voici les interactions que je souhaite tester ou valider : </p>
+        <p>Pour chaque user story, voici les interactions que je souhaite tester ou valider : </p>
         
         <p ><span>ACTIVATION </span>: Quelle est la meilleure manière d’invoquer Shiro ? (Oral ou via application ?)</p>
         <p ><span>IDENTIFICATION </span>: Comment s’identifie le chirurgien ?</p>

@@ -16,8 +16,10 @@ export const Nav = styled.nav`
         margin: 0 auto;
         text-decoration: none;
         letter-spacing: 1.5px;
+        font-family: var(--font);
+
         text-transform: uppercase;
-        color: #222876;
+       
         background:${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
 
        
@@ -25,14 +27,13 @@ export const Nav = styled.nav`
 
 export const HeaderContainer = styled.div`
     display:flex;
-    background-color:#E6E7EF;
+    background-color:var(--bleu-vert);
     justify-content:space-between;
     height:70px;
     width: 100%;
     /* position: sticky; */
     top: 0px;
     /* z-index: 10; */
-    font-family: "Helvetica Neue";
     margin: 0 auto;
     max-width: 2000px;
     padding: 0 auto;
@@ -59,14 +60,16 @@ export const HeaderContainer = styled.div`
         font-weight: 700;
         text-decoration: none;
         letter-spacing: 1.5px;
-        color: #222876;
+        color: var(--saumon);
         margin-left:15px;
+
+        
   
   `
 
   export const MobileIcon = styled.div`
     display:none;
-
+    color: var(--saumon);
     @media screen and (max-width: 960px){
         display:block;
         position:absolute;
@@ -82,25 +85,31 @@ export const HeaderContainer = styled.div`
     display:flex;
     align-items: center;
     list-style: none;
-    text-align: center; 
     
     @media screen and (max-width:960px){
-        display: flex;
+        position: fixed;
+       
         flex-direction: column;
-        width:100%;
-        height:90vh;
-        position:absolute;
-        top:${({ click }) => (click ? "100%" : "-1000px")};
-        opacity:1;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 50px 10px;
+        width: min(75vw, 400px);
+        height: 100vh;
+        
+        z-index: -999;
+     
+        top:${({ click }) => (click ? "0" : "300vw")};
         transition: all 0.2s ease;
-        background:#fff;
-         
+        background:var(--bleu-vert);
+
+        justify-content:center;
     }
   `
 
 
   export const NavLink = styled(Link)`
-    color: #222876;
+    color: var(--saumon);;
     display: flex;
     align-items:center;
     text-decoration:none;
@@ -108,13 +117,15 @@ export const HeaderContainer = styled.div`
     height:100%;
 
     @media screen and (max-width: 960px){
+      align-items:center;
+      padding:0 0;
       text-align: center;
-      padding:2rem;
+      /* padding:2rem; */
       width:100%;
       display:table;
-
+      
       &:hover{
-        color:#222876;
+        color:var(--bleu-brillant);
         transition: all 0.3s ease;
       }
     }

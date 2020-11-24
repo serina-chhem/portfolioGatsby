@@ -8,9 +8,10 @@ import Footer from '../components/footer'
 const Contact = () => {
 
     return(
-        <div>
+        <div className="main">
         <Header/>
         <SEO title="Contact" />
+      <body>
 
         <section className="contact-page">
         <article className="contact-form">
@@ -43,8 +44,11 @@ const Contact = () => {
           </form>
         </article>
       </section>
+      
+      </body>
+      <Footer/>
 
-        <Footer/>
+       
         
 
         </div>

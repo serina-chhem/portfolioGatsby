@@ -1,8 +1,7 @@
 ---
 title : 'Projet FUTURY - Seat'
-date : '2020-11-12'
-author : 'Sérina Chhem' 
+description : 'Comment améliorer la mobilité dans les villes ? '
+image : '../../images/mobility.jpg' 
 path : '/portfolioMobility'
 ---
 
-Comment améliorer la mobilité dans les villes ? 

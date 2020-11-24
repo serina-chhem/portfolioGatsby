@@ -18,6 +18,10 @@ const StyledAboutMe = styled.section`
     @media (max-width: 768px) {
       display: block;
     }
+  
+  section{
+    padding-bottom:0px;
+  }
     
   }
   h2 {
@@ -110,11 +114,14 @@ const AboutPage = () => {
 
     return(
        
-        <div>
+        <div className="main">
              <Header/>
+             <body>
     <StyledAboutMe>
    
     <SEO title="About me" />
+
+      
 
     <h3 className="medium-heading">À propos de moi</h3>
 
@@ -126,10 +133,9 @@ const AboutPage = () => {
         <br/>
         <h2 className="medium-heading">
          
-        Certes, je ne suis pas la meilleure mais je fais tout en mon pouvoir pour obtenir ce que je veux. 
         C'est dans cette optique que je me suis lancée dans le développement de ce portfolio.
-        Dans tout ce que je fais, je tiens à ce que mes projets aient un impact autour de moi. Alors j'espère que mon portfolio fera son effet. 
-        J'ai appris à mener une idée jusqu'au bout avec le stress de finir à temps.
+        Dans tout ce que je fais, je tiens à ce que mes projets aient un impact autour de moi. 
+        Et aujourd'hui, je me lance dans le product management pour apporter une expérience unique aux utilisateurs.
 
         </h2>
         <br/>
@@ -157,6 +163,7 @@ const AboutPage = () => {
         
         
         </StyledAboutMe>
+        </body>
 
         <Footer/>
         </div>

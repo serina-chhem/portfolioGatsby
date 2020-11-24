@@ -4,12 +4,14 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
 
+    /* position: fixed; */
    
-    flex-direction: column;
+    /* flex-direction: column; */
+
     height: auto;
-    min-height: 0 auto;
-    padding: 0 auto;
-    text-align: center;
+   
+    margin: 0 auto;
+
 
 `
 
@@ -20,22 +22,22 @@ export const SocialMediaWrap = styled.div`
     align-items:center;
     width:100%;
     max-width:700px;
-    margin: 10px auto;
+    margin: 0 auto;
      
     @media (max-width: 768px) {
         display: block;
         width: 100%;
         max-width: 270px;
         margin: 10px auto;
-        color: #1B3CAA;
+        color: var(--bleu-vert);
   }
 `
 
 
 export const WebsiteRights =styled.small`
 
-    color:#1B3CAA;
-    font-family : "Helvetica Neue", sans-serif;
+    color: var(--bleu-vert);
+    font-family : var(--font);
     font-size:0.7rem;
 `
 
@@ -50,7 +52,7 @@ export const SocialIcons = styled.div`
 `
 
 export const SocialIconLink = styled.a`
-    color:#1B3CAA;
+    color: var(--bleu-vert);
     font-size:17px;
    
 
