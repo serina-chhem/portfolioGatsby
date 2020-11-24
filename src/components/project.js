@@ -49,7 +49,7 @@ const projects = data.proj.edges.filter(({node}) => node );
 
                 const {frontmatter} = node;
                 const { title, description, image, path } = frontmatter;
-                console.log(frontmatter);
+               
 
 
 
