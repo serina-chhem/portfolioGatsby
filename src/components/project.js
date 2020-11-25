@@ -2,12 +2,10 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
+import { Link } from "gatsby"
+
 
 const StyledProject = styled.section`
-    /* display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center; */
 
      .project {
         display: grid;
@@ -60,7 +58,7 @@ const StyledProject = styled.section`
       height: 100%;
       opacity: 0.25;
     }
-    a {
+    /* a {
       width: 100%;
       background-color: var(--saumon);
       border-radius: var(--radius);
@@ -74,21 +72,8 @@ const StyledProject = styled.section`
           filter: none;
         }
       }
-      &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 3;
-        transition: var(--transition);
-        /* background-color: var(--background); */
-        mix-blend-mode: screen;
-      }
-    }
+     
+    } */
     .img {
         border-radius: var(--radius);
          mix-blend-mode: multiply;
@@ -103,11 +88,25 @@ const StyledProject = styled.section`
     }
   }
  }
-
-
   
 `
+const StyledLink = styled(Link)`
 
+    width: 100%;
+    background-color: var(--saumon);
+    border-radius: var(--radius);
+    vertical-align: middle;
+    &:hover,
+    &:focus {
+    background: transparent;
+    &:before,
+    .img {
+        background: transparent;
+        filter: none;
+    }
+
+
+`
 
 
 
@@ -166,10 +165,9 @@ const projects = data.proj.edges.filter(({node}) => node );
                         </div>
 
                         <div className="project-image" >
-                            <a href={path}>
-                                <Img fluid={image.childImageSharp.fluid} alt={title} className="img"/>
-                                   
-                            </a>
+                            <StyledLink to={path}>
+                                <Img fluid={image.childImageSharp.fluid} alt={title} className="img"/>    
+                            </StyledLink>
                         </div>
 
                    </article>
