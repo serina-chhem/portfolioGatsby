@@ -6,22 +6,17 @@ import { Link } from "gatsby"
 
 
 const StyledProject = styled.section`
-
      .project {
         display: grid;
         margin-bottom: 4rem;
     }
-
-
     .project-info {
         background: var(--bleu-vert-fonce);
         padding: 1rem 2rem;
         border-bottom-left-radius: var(--radius);
         border-bottom-right-radius: var(--radius);
     }
-
  @media screen and (min-width: 992px) {
-
     .project {
      grid-template-columns: repeat(12, 1fr);
      align-items: center;
@@ -43,37 +38,19 @@ const StyledProject = styled.section`
      grid-row: 1 / 1;
      text-align: center;
    }
-
   .project-image {
-
     grid-column: 1 / span 8;
      /* grid-column-end: 8;  */
      grid-row: 1 / 1;
      height: 30rem;
      border-radius: var(--radius);
      box-shadow: var(--noir);
-
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.25;
     }
-    /* a {
-      width: 100%;
-      background-color: var(--saumon);
-      border-radius: var(--radius);
-      vertical-align: middle;
-      &:hover,
-      &:focus {
-        background: transparent;
-        &:before,
-        .img {
-          background: transparent;
-          filter: none;
-        }
-      }
-     
-    } */
+  
     .img {
         border-radius: var(--radius);
          mix-blend-mode: multiply;
@@ -91,7 +68,6 @@ const StyledProject = styled.section`
   
 `
 const StyledLink = styled(Link)`
-
     width: 100%;
     background-color: var(--saumon);
     border-radius: var(--radius);
@@ -104,8 +80,7 @@ const StyledLink = styled(Link)`
         background: transparent;
         filter: none;
     }
-
-
+    }
 `
 
 
@@ -136,7 +111,6 @@ query{
         }
     }
 }
-
 `);
 
 
@@ -144,6 +118,7 @@ const projects = data.proj.edges.filter(({node}) => node );
     
     return(
         <div>
+
             <h3 className="medium-heading">Mes projets en cours</h3>
 
 

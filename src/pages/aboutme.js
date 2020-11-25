@@ -5,6 +5,9 @@ import Header from '../components/header'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from "gatsby-image"
+import Typical from 'react-typical'
+import {Link} from 'gatsby'
+
 
 
 const StyledAboutMe = styled.section`
@@ -88,6 +91,7 @@ const StyledPic = styled.div`
       mix-blend-mode: normal;
       filter: grayscale(100%) contrast(1);
       /* transition: var(--transition); */
+      
     }
 
   .wrapper {
@@ -96,7 +100,23 @@ const StyledPic = styled.div`
     width: 100%;
    
   }
-`;
+
+`
+const StyledLink = styled(Link)`
+    width: 100%;
+    /* background-color: var(--saumon); */
+    border-radius: var(--radius);
+    vertical-align: middle;
+    &:hover,
+    &:focus {
+    background: transparent;
+    &:before,
+    .img {
+        background: transparent;
+        filter: none;
+    }
+    }
+`
 
 
 const AboutPage = () => {
@@ -125,8 +145,7 @@ const AboutPage = () => {
     <SEO title="About me" />
 
       
-
-    <h3 className="medium-heading">À propos de moi</h3>
+    <Typical steps={['À', 50, 'À propos', 30, 'À propos de', 10, 'À propos de moi.',100]} loop="2" wrapper="h3"/> 
 
             <div className="inner">
       <StyledText>
@@ -161,8 +180,11 @@ const AboutPage = () => {
                 
         </StyledText>
 
+
         <StyledPic>
+            <StyledLink>
                 <Image fixed={data.file.childImageSharp.fixed } alt = "Moi" className="img"/>
+            </StyledLink>
         </StyledPic>
 
         </div>

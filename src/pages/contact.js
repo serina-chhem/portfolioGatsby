@@ -2,6 +2,7 @@ import Header from '../components/header'
 import React from "react"
 import SEO from "../components/seo"
 import Footer from '../components/footer'
+import Typical from 'react-typical'
 
 
 
@@ -15,7 +16,9 @@ const Contact = () => {
 
         <section className="contact-page">
         <article className="contact-form">
-          <h3>Contactez-moi !</h3>
+        <Typical steps={['Con', 50, 'Contactez', 30, 'Contactez', 10, 'Contactez-moi !',100]} loop="1" wrapper="h3"/> 
+
+          {/* <h3>Contactez-moi !</h3> */}
           <form action="https://formspree.io/f/meqpzykd" method="POST">
             <div className="form-group">
               <input
@@ -36,11 +39,14 @@ const Contact = () => {
                 placeholder="message"
                 className="form-control"
               ></textarea>
-            </div>
+
             <button type="submit" className="submit-btn btn">
-             <p>Envoyer</p>
+              <h3>Envoyer</h3>
               
             </button>
+
+            </div>
+           
           </form>
         </article>
       </section>

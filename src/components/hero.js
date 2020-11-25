@@ -2,6 +2,7 @@ import React from "react"
 // import styles from "../styles/styles.scss"
 // import Image from "../components/image"
 import styled from 'styled-components'
+import Typical from 'react-typical'
 
 
 const StyledHero = styled.section`
@@ -36,8 +37,9 @@ const Hero = () => {
     return(
     
         <StyledHero>
-            <h3 className="medium-heading">Bienvenue ! Je suis Sérina, </h3>
-            <h1 className="big-heading">Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.</h1> 
+            <h3 className="medium-heading">Bienvenue ! Je suis Sérina,</h3>  
+
+           <Typical steps={['Une étudiante déterminée,', 200, 'Une étudiante déterminée, adaptable', 200, 'Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.', 200]} loop="4" wrapper="h1"/> 
             <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>
            
         </StyledHero>

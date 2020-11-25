@@ -218,9 +218,9 @@ span{
   background: var(--bleu-vert-fonce);
   border-radius: 0.25rem;;
   text-align: center;
-  // box-shadow: var(--bleu-brillant);
+  box-shadow: var(--bleu-brillant);
   border: var(--bleu-brillant);
-  // transition: var(--transition);
+  transition: var(--transition);
   width: 90vw;
   max-width: 35rem;
 }
@@ -237,20 +237,20 @@ span{
   margin-bottom: 1.25rem;
   background: var(--background);
   border-radius: 0.25rem;;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 .form-control::placeholder {
   font-family: var(--font);
-  color: var(--bleu-fonce);
+  color: var(--bleu-vert);
   letter-spacing: 0.2rem;
 }
 .submit-btn {
   display: block;
   font-family: var(--font);
-  background-color:var(--background);
+  background-color:var(--bleu-vert);
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius:0.25rem ;
   border-top-right-radius: 0;
