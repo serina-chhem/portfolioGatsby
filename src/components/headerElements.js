@@ -70,7 +70,7 @@ export const HeaderContainer = styled.div`
         vertical-align: middle;
         &:hover, 
         &:focus {
-          background: transparent;
+          background: var(--vert-brillant);
           }
       }
         
