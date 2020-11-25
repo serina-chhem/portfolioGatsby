@@ -32,8 +32,10 @@ const Header = () => {
     
     <Nav click={click} active={scroll}>
       <HeaderContainer>
-        <NavLogo to = "/">
+        <NavLogo to = "/" >
+          <a >
           SÉRINA CHHEM
+          </a>
         </NavLogo>
 
         <MobileIcon onClick={handleClick}>

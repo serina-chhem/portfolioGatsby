@@ -63,6 +63,16 @@ export const HeaderContainer = styled.div`
         color: var(--saumon);
         margin-left:15px;
 
+      a {
+        width: 100%;
+        /* background-color: var(--vert-brillant); */
+        border-radius: var(--radius);
+        vertical-align: middle;
+        &:hover, 
+        &:focus {
+          background: transparent;
+          }
+      }
         
   
   `
