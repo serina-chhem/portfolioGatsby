@@ -63,10 +63,10 @@ const projects = data.proj.edges.filter(({node}) => node );
                         </div>
 
                         <div className="project-img" >
-                        <a href={path}>
+                            <a href={path}>
                                 <Img fluid={image.childImageSharp.fluid} alt={title} className="img"/>
                                    
-                        </a>
+                            </a>
                         </div>
 
                    </article>

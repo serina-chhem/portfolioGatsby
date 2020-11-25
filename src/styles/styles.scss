@@ -285,20 +285,20 @@ span{
     box-shadow: var(--noir);
 
 
-    a {
-      width: 100%;
-      background-color: var(--vert-brillant);
-      border-radius: var(--radius);
-      vertical-align: middle;
-      &:hover, 
-      &:focus {
-        // background: transparent;
-        &:before,
-        .img {
-          // background: transparent;
-          filter: none;
-        }
-      }
+    // a {
+    //   width: 100%;
+    //   background-color: var(--vert-brillant);
+    //   border-radius: var(--radius);
+    //   vertical-align: middle;
+    //   &:hover, 
+    //   &:focus {
+    //     background: transparent;
+    //     &:before,
+    //     .img {
+    //       background: transparent;
+    //       filter: none;
+    //     }
+    //   }
 
       .img {
         border-radius: var(--radius);
@@ -314,7 +314,7 @@ span{
   
       }
  
-    }
+    // }
    
 
    
