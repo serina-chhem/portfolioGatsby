@@ -290,15 +290,15 @@ span{
       background-color: var(--vert-brillant);
       border-radius: var(--radius);
       vertical-align: middle;
-      &:hover,
-      &:focus {
-        background: transparent;
+      // &:hover, 
+      // &:focus {
+      //   background: transparent;
         &:before,
         .img {
           background: transparent;
           filter: none;
         }
-      }
+      // }
  
     }
    
