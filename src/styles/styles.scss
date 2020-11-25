@@ -341,9 +341,41 @@ span{
   }
 
 
+}
 
 
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--vert-brillant);
+  }
+ 
+}
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+}
+input, textarea {
+  border-radius: 0;
+  outline: 0;
+  &:focus {
+    outline: 0;
+  }
+  &:focus,
+  &:active {
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
 }
 
 
