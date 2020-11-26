@@ -26,8 +26,8 @@ const StyledHero = styled.section`
     line-height: 1.8;
     font-weight: 150;
 
-  }
   
+}
   
 `
 
@@ -38,6 +38,7 @@ const Hero = () => {
     
         <StyledHero>
             <h3 className="medium-heading">Bienvenue ! Je suis Sérina,</h3>  
+            {/* <p className="background-text">Enchantée </p> */}
 
            <Typical steps={['Une étudiante déterminée,', 200, 'Une étudiante déterminée, adaptable', 200, 'Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.', 200]} loop="4" wrapper="h1"/> 
             <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>

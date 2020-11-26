@@ -29,7 +29,6 @@ const StyledAboutMe = styled.section`
   }
   p {
     color: var(--bleu-vert);
-    justify-content: left;
     line-height: 1.5;
     font-weight: 400;
     font-size:1.1rem;
@@ -44,6 +43,33 @@ const StyledAboutMe = styled.section`
     font-size:1.1rem;
 
   }
+  h3{
+    position:absolute;
+  }
+  .background-text{
+        margin-bottom: 1rem;
+        align-items:center;
+        font-size: 6.4rem;
+        font-weight: 600;
+        letter-spacing: 1.5rem;
+        color: var(--saumon-clair);
+        display: flex;
+        align-items: center;
+        text-align:center;
+        z-index: -100;
+        @media screen and (max-width:1200px){
+            font-size:6rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1rem;
+            }
+        @media screen and (max-width:868px) {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.1rem;
+        }
+        
+
+    }
 
 `
 
@@ -146,6 +172,7 @@ const AboutPage = () => {
 
       
     <Typical steps={['À', 50, 'À propos', 30, 'À propos de', 10, 'À propos de moi.',100]} loop="2" wrapper="h3"/> 
+    <p className="background-text">Qui suis-je ?</p>
 
             <div className="inner">
       <StyledText>

@@ -8,10 +8,10 @@ import Project from '../components/project'
 const StyledWork = styled.section`
     flex-direction: column;
     align-items: flex-start;
+    justify-content:center;
     min-height: auto;
-    h3{
-        text-align:center;
-    }
+    padding-top:auto;
+    
    
 `
 

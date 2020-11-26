@@ -3,9 +3,15 @@ import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import { Link } from "gatsby"
+import Typical from 'react-typical'
 
 
 const StyledProject = styled.section`
+/* 
+    text-align:center;
+    justify-items:center;
+    align-content:center; */
+   
      .project {
         display: grid;
         margin-bottom: 4rem;
@@ -16,6 +22,37 @@ const StyledProject = styled.section`
         border-bottom-left-radius: var(--radius);
         border-bottom-right-radius: var(--radius);
     }
+    h3{
+        
+        position: absolute;
+    
+    }
+
+  .background-text{
+        margin-bottom: 8rem;
+        align-items:center;
+        font-size: 8rem;
+        font-weight: 700;
+        letter-spacing: 1.7rem;
+        color: var(--saumon-clair);
+        display: flex;
+        align-items: center;
+        text-align:center;
+        z-index: -100;
+        @media screen and (max-width:868px) {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            letter-spacing: 0.1rem;
+        }
+        @media screen and (max-width:1200px){
+            font-size:5rem;
+            margin-bottom: 4rem;
+            letter-spacing: 1rem;
+            }
+
+    }
+
+ 
  @media screen and (min-width: 992px) {
     .project {
      grid-template-columns: repeat(12, 1fr);
@@ -69,7 +106,7 @@ const StyledProject = styled.section`
 `
 const StyledLink = styled(Link)`
     width: 100%;
-    background-color: var(--saumon);
+    background-color: var(--saumon-clair);
     border-radius: var(--radius);
     vertical-align: middle;
     &:hover,
@@ -119,10 +156,19 @@ const projects = data.proj.edges.filter(({node}) => node );
     return(
         <div>
 
-            <h3 className="medium-heading">Mes projets en cours</h3>
-
+           
 
     <StyledProject>
+
+    <Typical steps={['Mes', 10, 'Mes projets', 10, 'Mes projets en', 10, 'Mes projets en cours',100]} loop="2" wrapper="h3"/> 
+
+    
+
+        {/* <h3 className="medium-heading">Mes projets en cours</h3> */}
+
+        
+            <p className="background-text">Portfolio</p>
+
 
             {projects && 
             projects.map(({node}, i) => {
@@ -134,7 +180,7 @@ const projects = data.proj.edges.filter(({node}) => node );
                     <article key={i} className="project">
                         <div className="project-info">
 
-                            <h3 className="medium-heading"> {title}</h3>
+                            <h4 className="medium-heading"> {title}</h4>
                             <p> {description}</p>
 
                         </div>
