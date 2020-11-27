@@ -80,7 +80,7 @@ const StyledProject = styled.section`
      /* grid-column-end: 8;  */
      grid-row: 1 / 1;
      height: 30rem;
-     border-radius: var(--radius);
+     border-radius: 1rem;
      box-shadow: var(--noir);
     @media (max-width: 768px) {
       grid-column: 1 / -1;
@@ -89,7 +89,7 @@ const StyledProject = styled.section`
     }
   
     .img {
-        border-radius: var(--radius);
+        border-radius: 1rem;
          mix-blend-mode: multiply;
          filter: grayscale(50%) contrast(1) brightness(80%);
         
@@ -107,7 +107,7 @@ const StyledProject = styled.section`
 const StyledLink = styled(Link)`
     width: 100%;
     background-color: var(--saumon-clair);
-    border-radius: var(--radius);
+    border-radius: 1rem;
     vertical-align: middle;
     &:hover,
     &:focus {
