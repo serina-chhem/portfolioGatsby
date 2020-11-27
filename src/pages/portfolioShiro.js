@@ -17,6 +17,7 @@ const StyledShiro = styled.section`
     align-items: flex-start;
     min-height: auto;
 
+
     h1{
         white-space: nowrap;
         text-align: center;
