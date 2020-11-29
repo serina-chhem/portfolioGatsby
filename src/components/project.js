@@ -27,6 +27,9 @@ const StyledProject = styled.section`
         position: absolute;
     
     }
+    h4{
+        color:var(--saumon-clair)
+    }
 
   .background-text{
         margin-bottom: 8rem;

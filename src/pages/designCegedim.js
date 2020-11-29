@@ -118,8 +118,24 @@ const DesignCegedim = () => {
                     <a href="https://www.cegedim-srh.com/solutions/Pages/La-philosophie-TEAMS_RH.aspx">
                     https://www.cegedim-srh.com/solutions/Pages/La-philosophie-TEAMS_RH.aspx
                     </a>
-                    En tentant de respecter au mieux le « Design System » de l’entreprise, voici la page que j’aurais voulu voir en tant que cliente.  
                 </p>
+
+                <h2>Recherche</h2>
+
+                <h1> Mission</h1>
+                <p className="small-p">Avant de commencer le design, j’ai commencé par analyser la vision de la solution SIRH (Système d’Information Ressources Humaines) pour respecter les valeurs de l’entreprise. </p>
+                <p className="small-p">Ici, la vision de Cegedim SRH est d’améliorer la performance de l’équipe RH en créant des plateformes SaaS optimales. </p>
+               
+               <p className="small-p">Le site de l’entreprise se doit donc d’expliquer cette mission aux potentiels clients. D’après la page, le logiciel de paie a une capacité à fluidifier l’information, d’amélioer la productivité des RH et accroitre sa réactivité. Elle est complète et modulaire, et bénéficie des nouvelles technologies Java. 
+
+                    En bref, la page explique clairement les avantages à utiliser la solution Cegedim SRH. Cependant, elle ne présente pas de démo pour l’éventuel client. 
+                </p>
+
+                <p className="small-p">           
+                     En tentant de respecter au mieux le « Design System » de l’entreprise, voici la page que j’aurais voulu voir en tant que cliente.  
+                </p>
+
+
                 <StyledPic>
                 <Img fluid={data.file.childImageSharp.fluid } className="img"/>
                 </StyledPic>

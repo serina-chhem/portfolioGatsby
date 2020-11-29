@@ -28,7 +28,7 @@ const StyledAboutMe = styled.section`
     
   }
   p {
-    color: var(--bleu-vert);
+    color: var(--bleu-vert-fonce);
     line-height: 1.5;
     font-weight: 400;
     font-size:1.1rem;
@@ -82,7 +82,7 @@ const StyledText = styled.div`
     overflow: hidden;
     list-style: none;
     font-weight:lighter;
-    color: var(--bleu-vert-fonce);
+    color: var(--bleu-vert);
     li {
       position: relative;
       margin-bottom: 10px;
@@ -93,7 +93,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--bleu-vert-fonce);
+        color: var(--bleu-vert);
         font-size: 1.2rem;
         line-height: 12px;
       }
@@ -191,9 +191,9 @@ const AboutPage = () => {
         </p>
         <br/>
         <p className="medium-heading">
-          <span>
+          {/* <span> */}
         Vous trouverez donc les projets que j’ai pu développer, qu’ils soient académiques (en équipe) ou personnels. 
-          </span>
+          {/* </span> */}
         </p>
 
         <br/>
