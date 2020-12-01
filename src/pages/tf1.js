@@ -20,13 +20,6 @@ const StyledTF1 = styled.section`
         margin-left:17.3rem;
         margin-top:-1.2rem;
     }
-    .canal-wrapper{
-        background-color:var(--noir);
-        text-align:center;
-        margin: auto;
-        width:230px;
-        overflow:hidden;
-    }
     h5{
         /* margin:0; */
         font-family: 'Roboto', sans-serif;
@@ -122,16 +115,21 @@ const Tf1 = () => {
                 <p>Pour montrer ma motivation pour le poste, j’ai décidé d’imaginer une partie du projet.</p>
 
                 <h1>La mission de TF1 </h1>
-                <p>Partager des contenus qui inspirent positivement la société. </p>
+                <p> « Partager des contenus qui inspirent positivement la société. » </p>
                <p>En partant de cette déclaration, j'ai pu établir la manière dont je commencerai le projet en tant que Product Owner.  </p>
                
-               {/* <h2>Recherche utilisateurs</h2> */}
+               <h2>Recherche utilisateurs</h2>
+               <p>Pour commencer l'étude, une bonne recherche utilisateurs s'impose. </p>
+
+               <p>J'ai donc préparé un questionnaire pour comprendre ses besoins</p>
+                   
+                <p>Après avoir contacté un membre d'un compte TF1 sur la plateforme, j'ai pu analysé ce qu'il dit, pense, resent et fait lorsqu'il arrive sur la plateforme de streaming : </p>
                <StyledPic>
                     <Img fluid={data.file.childImageSharp.fluid } alt = "tf1VisionBoard" className="img"/>
                 </StyledPic>
             
                 <h1>Perspectives</h1>
-                <p>Pour l'instant, il ne s'agit que d'une ébauche, mais on pourrait imaginer la durée du projet sur des sprints de 2 semaines.</p>
+                <p>On pourrait imaginer la durée du projet sur des sprints de 2 semaines.</p>
             </StyledTF1>
             </body>
             <Footer/>

@@ -24,7 +24,7 @@ const StyledCanal = styled.section`
         background-color:var(--noir);
         text-align:center;
         margin: auto;
-        width:230px;
+        width:260px;
         overflow:hidden;
     }
     h5{
@@ -110,11 +110,11 @@ const MyCanal = () => {
         <SEO title="Canal+" />
             
             <StyledCanal>
-                <h6>my</h6>
-                <h5 className="canal-wrapper"> CANAL</h5>
+                {/* <h6>my</h6> */}
+                <h5 className="canal-wrapper"> CANAL+</h5>
 
                 <h1>Product Owner Back-Office</h1>
-                <h2>Comment améliorer la productivité des experts métiers via un back-office ?</h2>
+                {/* <h2>Comment améliorer la productivité des experts métiers via un back-office ?</h2> */}
                 <p>Dans un contexte d’internationalisation de myCANAL, le groupe recherche un stagiaire product owner pour (entre autres) : </p>
                 <ul>
                     <li> ▹ Recueillir les besoins des PM et des équipes métiers, </li>
@@ -123,19 +123,36 @@ const MyCanal = () => {
                     <li> ▹ Gérer le backlog et bien d’autres encore.   </li>
 
                 </ul>
+
+                <p>Au sein du groupe, les product owner back-office jouent un rôle d'intermédiaire entre les PM/Designers et les développeurs.
+              </p>
                 <p>Pour montrer ma motivation pour le poste, j’ai décidé d’imaginer une partie du projet.</p>
 
                 <h1>Tout d'abord, c'est quoi la vision CANAL + ? </h1>
-                <p>Faire rayonner la diversité culturelle à travers le monde et créer une expérience de contenu unique. </p>
-               <p>En partant de cette déclaration, j'ai pu établir un Product Vision Board pour définir ma vision d'un back-office. </p>
+                <p>« Faire rayonner la diversité culturelle à travers le monde et créer une expérience de contenu unique.» </p>
+              
+              <p>Dans cette optique, il est important de proposer la meilleure expérience lorsqu'un client arrive sur une des applications en ligne du groupe, qu'il s'agisse de l'espace client, ou de la boutique.</p>
+                
+              
+              <p>En me mettant dans la peau d'un PO Back-Office au sein de la direction TECH de Canal+, j'ai imaginé que les 
+                  Products Managers et les Designers souhaitaient implémenter un chatbot dans la boutique en ligne. </p>
+                  <p>
+                  Alors après avoir recueilli le besoin, je procèderai à un découpage de la fonctionnalité en User Stories afin les communiquer aux développeurs. 
+             </p>
+            
+              <h2>Découpage de la feature en User Stories</h2>
+
+              
                
                
                 <StyledPic>
                     <Img fluid={data.file.childImageSharp.fluid } alt = "CanalVisionBoard" className="img"/>
                 </StyledPic>
+
+                
             
-                <h1>Perspectives</h1>
-                <p>Pour l'instant, il ne s'agit que d'une ébauche, mais on pourrait imaginer un système de gamification/récompense pour augmenter la performance des métiers.</p>
+                <h1>Perspectives</h1> 
+                <p>On peut imaginer que cette US peut être livrée en un sprint d'une semaine.</p>
             </StyledCanal>
             </body>
             <Footer/>
