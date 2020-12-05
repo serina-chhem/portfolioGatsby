@@ -7,11 +7,8 @@ import Typical from 'react-typical'
 
 
 const StyledProject = styled.section`
-/* 
-    text-align:center;
-    justify-items:center;
-    align-content:center; */
-   
+
+   padding-top: 4rem;
      .project {
         display: grid;
         margin-bottom: 4rem;
@@ -28,6 +25,10 @@ const StyledProject = styled.section`
     
     }
     h4{
+        color:var(--saumon-clair)
+    }
+
+    p{
         color:var(--saumon-clair)
     }
 

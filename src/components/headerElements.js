@@ -18,7 +18,7 @@ export const Nav = styled.nav`
         letter-spacing: 1.5px;
         font-family: var(--font);
 
-        text-transform: uppercase;
+        
        
         background:${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
 
@@ -27,7 +27,8 @@ export const Nav = styled.nav`
 
 export const HeaderContainer = styled.div`
     display:flex;
-    background-color:var(--bleu-vert);
+    background-color:var(--background);
+    /* background:linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100)); */
     justify-content:space-between;
     height:70px;
     width: 100%;
@@ -46,6 +47,9 @@ export const HeaderContainer = styled.div`
     @media (max-width: 480px) {
       padding: 0;
     }
+    @media screen and (max-width:960px){
+      background-color:var(--bleu-vert)
+    }
     
    
   `
@@ -54,6 +58,7 @@ export const HeaderContainer = styled.div`
         display: flex;
         align-items: center;
         text-align:center;
+        text-transform: uppercase;
         justify-content: space-between;
         height: 70px ;
         font-size: 2rem;
@@ -85,6 +90,7 @@ export const HeaderContainer = styled.div`
     align-items: center;
     list-style: none;
     
+    
     @media screen and (max-width:960px){
         position: fixed;
        
@@ -102,18 +108,20 @@ export const HeaderContainer = styled.div`
         transition: all 0.2s ease;
         background:var(--bleu-vert);
 
+
         justify-content:center;
     }
   `
 
 
   export const NavLink = styled(Link)`
-    color: var(--saumon);;
+    color: var(--saumon);
     display: flex;
     align-items:center;
     text-decoration:none;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     height:100%;
+    font-size:1.1rem;
 
     @media screen and (max-width: 960px){
       align-items:center;

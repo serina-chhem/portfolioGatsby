@@ -36,7 +36,7 @@ export const SocialMediaWrap = styled.div`
 
 export const WebsiteRights =styled.small`
 
-    color: var(--bleu-vert);
+    color: var(--bleu-vert-fonce);
     font-family : var(--font);
     font-size:0.7rem;
 `
@@ -52,7 +52,7 @@ export const SocialIcons = styled.div`
 `
 
 export const SocialIconLink = styled.a`
-    color: var(--bleu-vert);
+    color: var(--bleu-vert-fonce);
     font-size:17px;
    
 

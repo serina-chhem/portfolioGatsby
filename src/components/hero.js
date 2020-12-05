@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Typical from 'react-typical'
 
 
+
 const StyledHero = styled.section`
     flex-direction: column;
     align-items: flex-start;
@@ -14,22 +15,26 @@ const StyledHero = styled.section`
         margin-top: 20px;
         color: var(--bleu-vert);
         line-height: 1.5;
-        font-size: clamp(40px, 8vw, 60px);
-        font-weight: 200;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing:5px;
         @media (max-width: 480px) {
         margin: 0 0 20px 2px;
         }
   }
   h2 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     color: var(--bleu-vert-fonce);
     line-height: 1.8;
     font-weight: 150;
-
-  
 }
+    h3{
+        color: var(--bleu-vert-fonce);
+    }
   
 `
+
+
 
 const Hero = () => {
 
@@ -38,7 +43,6 @@ const Hero = () => {
     
         <StyledHero>
             <h3 className="medium-heading">Bienvenue ! Je suis Sérina,</h3>  
-            {/* <p className="background-text">Enchantée </p> */}
 
            <Typical steps={['Une étudiante déterminée,', 200, 'Une étudiante déterminée, adaptable', 200, 'Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.', 200]} loop="4" wrapper="h1"/> 
             <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>

@@ -1,11 +1,14 @@
 
+@import url("./font/stylesheet.css");
+
 :root{
-  --font:'Source Sans Pro', sans-serif;
+  --font:'Euclid Circular B', sans-serif;
   --radius: 0.25rem;
   --background:#fff5ea;
+  // --background:linear-gradient(#e66465, #9198e5);
   --blanc: #fff;
   --noir:#000;
-  --saumon:#95389e;
+  --saumon:#AC70B1;
   --saumon-clair:#fbe8e7;
   --bleu-vert:#70adb5;
   --bleu-vert-fonce:#407088;
@@ -49,17 +52,15 @@ body{
 
 section{
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 25px 0;
     max-width: 950px;
     background-color: var(--background);
 
-   
-
     @media (max-width: 768px) {
-      padding: 80px 0;
+      padding: 40px 0;
     }
     @media (max-width: 480px) {
-      padding: 60px 0;
+      padding: 30px 0;
     }
 
 }
@@ -87,7 +88,7 @@ section{
     font-weight: bold;
     line-height:1rem;
     font-size: 1rem;
-    color:var(--vert-brillant);
+    color:var(--bleu-vert-fonce);
 }
 
 .descriptionForWrapper{
@@ -134,7 +135,6 @@ h3{
     color:var(--saumon);
     font-weight: 500;
     font-size:clamp(10px, 4vw, 30px);
-    
   }
 
 
@@ -155,6 +155,7 @@ h6 {
 }
 .medium-heading {
   margin: auto auto;
+  
   font-size: clamp(20px, 4vw, 30px);
 
 }
@@ -190,7 +191,7 @@ p{
 
 span{
   font-weight: lighter;
-  color:var(--vert-brillant);
+  color:var(--bleu-vert-fonce);
 }
 
 .whyUs{
@@ -200,7 +201,7 @@ span{
   font-weight: lighter;
 
   font-size: 15px;
-  color:var(--saumon);
+  color:var(--bleu-vert);
   grid-template-columns: repeat(1, 400px);
   margin: auto 0;
   padding: 0 2rem;
@@ -217,7 +218,7 @@ span{
 .whyUser{
   width:400px;
   display: grid;
-  color:var(--vert-brillant);
+  color:var(--bleu-vert-fonce);
   left: 50%;
   font-weight: lighter;
   font-size: 15px;
