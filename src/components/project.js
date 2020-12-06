@@ -67,15 +67,16 @@ const StyledProject = styled.section`
      box-shadow: var(--noir);
      text-align: center;
      z-index: 2;
-     grid-column: 5 /12;
+     grid-column: 8 / span 12;
      grid-row: 1 / 1;
+     
    }
    .project:nth-of-type(even) .project-image {
      grid-column: 5 / -1;
      grid-row: 1 / 1;
    }
    .project:nth-of-type(even) .project-info {
-     grid-column: 2 / span 7;
+     grid-column: 1 / span 5;
      grid-row: 1 / 1;
      text-align: center;
    }
