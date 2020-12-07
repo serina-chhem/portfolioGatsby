@@ -38,6 +38,7 @@ export const HeaderContainer = styled.div`
     margin: 0 auto;
     max-width: 2000px;
     padding: 0 auto;
+    box-shadow:3px 5px 5px var(--saumon); 
     @media (max-width: 1080px) {
       padding: 0;
     }
@@ -48,7 +49,9 @@ export const HeaderContainer = styled.div`
       padding: 0;
     }
     @media screen and (max-width:960px){
-      background-color:var(--bleu-vert)
+      background-color:var(--bleu-vert);
+      box-shadow:none; 
+
     }
     
    
