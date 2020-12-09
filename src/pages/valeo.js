@@ -96,14 +96,7 @@ const StyledPic = styled.div`
       position: absolute;
       margin:auto auto;
       mix-blend-mode: normal;
-      @media (max-width: 768px) {
-        width:20rem;
-        height:10rem;
-      }
-      @media (max-width: 368px) {
-        width:5rem;
-        height:3rem;
-      }
+    
     }
 
 `
