@@ -64,7 +64,7 @@ const StyledProject = styled.section`
    }
     .project-info {
      border-radius: var(--radius);
-     box-shadow: var(--noir);
+
      text-align: center;
      z-index: 2;
      grid-column: 8 / span 12;
@@ -82,7 +82,6 @@ const StyledProject = styled.section`
    }
   .project-image {
     grid-column: 1 / span 8;
-     /* grid-column-end: 8;  */
      grid-row: 1 / 1;
      height: 30rem;
      border-radius: 1rem;
@@ -97,7 +96,8 @@ const StyledProject = styled.section`
         border-radius: 1rem;
          mix-blend-mode: multiply;
          filter: grayscale(50%) contrast(1) brightness(80%);
-        
+         box-shadow: 7px 7px 5px var(--background);
+
          @media (max-width: 768px) {
            object-fit: cover;
            width: auto;
