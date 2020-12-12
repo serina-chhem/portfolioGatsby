@@ -20,8 +20,14 @@ module.exports = {
         path: `${__dirname}/src/pages/posts`,
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        quality:200,
+      },
+    },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

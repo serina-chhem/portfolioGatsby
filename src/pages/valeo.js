@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import SEO from "../components/seo"
+import NotFoundPage from "../pages/404"
 import Image from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -49,7 +50,7 @@ const StyledValeo = styled.section`
         font-size:3rem;
     }
     h2{
-        margin:4rem;
+        margin:1rem;
         color:var(--bleu-brillant);
         font-size:2.3rem;
         font-weight:normal;
@@ -60,7 +61,7 @@ const StyledValeo = styled.section`
 
 const StyledPic = styled.div`
   /* position: relative; */
-  margin:2rem 0 ;
+  margin:1rem 0 ;
   max-width: auto;
   @media (max-width: 768px) {
     margin: 50px auto 0;
@@ -75,10 +76,10 @@ const StyledPic = styled.div`
       
     }
   .imgLogo {
-      width:30rem;
-      height:15rem;
-      position: absolute;
-      margin:auto auto;
+      width:15rem;
+      height:10rem;
+      /* position: absolute; */
+      margin:0px auto;
       mix-blend-mode: normal;
       @media (max-width: 768px) {
         width:20rem;
@@ -106,14 +107,17 @@ const Valeo = () => {
 
     const data = useStaticQuery(graphql`
     {
-      valeoImages: allFile(filter: {extension: {regex: "/(jpg)|(png)/"}, relativeDirectory: {eq: "imagesValeoPage"}}, sort: {fields: base, order: DESC}) {
+      valeoImages: allFile(filter: {extension: {regex: "/(jpg)|(png)|(svg)/"}, relativeDirectory: {eq: "imagesValeoPage"}}, sort: {fields: base, order: DESC}) {
         edges {
           node {
             id
             base
+            extension
+            publicURL
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid_withWebp
+               
               }
             }
           }
@@ -122,7 +126,9 @@ const Valeo = () => {
 
     }
   `)
-    
+
+
+if (!data.valeoImages.edges[0].node.childImageSharp && data.valeoImages.edges[0].node.extension === 'svg') {
     return (
         
         <div className="main">
@@ -136,13 +142,19 @@ const Valeo = () => {
             
             <StyledValeo>
                 
-            <StyledPic key={data.valeoImages.edges[0].node.id}>
+            {/* <StyledPic key={data.valeoImages.edges[0].node.id}>
                  <Image fluid={data.valeoImages.edges[0].node.childImageSharp.fluid} 
                  alt =  {data.valeoImages.edges[0].node.base}
                  className="imgLogo"/>
-            </StyledPic>
+            </StyledPic> */}
 
-                
+            <StyledPic>
+              <img className="imgLogo" src={data.valeoImages.edges[0].node.publicURL} alt={data.valeoImages.edges[0].node.base}/>
+            </StyledPic>
+            
+           
+
+
                 <h2>Équipementier automobile</h2>
                 
                 <p>Le CarLab de Valeo se repose sur le Design Thinking pour créer de nouveaux produits et services dédiées aux interfaces des véhicules du futur.  </p>
@@ -160,9 +172,9 @@ const Valeo = () => {
                 <p>
                   Ci-dessous se trouve le prototype que j'ai réalisé sur Adobe Illustrator.
                 </p>
-            <StyledPic key={data.valeoImages.edges[1].node.id}>
-                 <Image fluid={data.valeoImages.edges[1].node.childImageSharp.fluid} 
-                 alt =  {data.valeoImages.edges[1].node.base}
+            <StyledPic key={data.valeoImages.edges[2].node.id}>
+                 <Image fluid={data.valeoImages.edges[2].node.childImageSharp.fluid} 
+                 alt =  {data.valeoImages.edges[2].node.base}
                  className="imgDashboard"/>
             </StyledPic>
 
@@ -172,9 +184,9 @@ const Valeo = () => {
             </p>
 
         <h2>Une vue d'ensemble</h2>
-            <StyledPic key={data.valeoImages.edges[2].node.id}>
-                 <Image fluid={data.valeoImages.edges[2].node.childImageSharp.fluid} 
-                 alt =  {data.valeoImages.edges[2].node.base}
+            <StyledPic key={data.valeoImages.edges[3].node.id}>
+                 <Image fluid={data.valeoImages.edges[3].node.childImageSharp.fluid} 
+                 alt =  {data.valeoImages.edges[3].node.base}
                  className="img"/>
             </StyledPic>
             
@@ -184,6 +196,10 @@ const Valeo = () => {
             <Footer/>
         </div>
     )
+
+  }
+
+  return NotFoundPage;
 }
 
 export default Valeo
