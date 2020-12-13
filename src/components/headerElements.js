@@ -26,19 +26,25 @@ export const Nav = styled.nav`
     ` 
 
 export const HeaderContainer = styled.div`
+
+
+    background-color: rgba( 215, 215, 215, 0.25 );
+    box-shadow: 0 5px 25px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+      
     display:flex;
-    background-color:var(--background);
+    /* background-color:var(--background); */
     /* background:linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100)); */
     justify-content:space-between;
     height:70px;
     width: 100%;
-    /* position: sticky; */
     top: 0px;
-    /* z-index: 10; */
     margin: 0 auto;
     max-width: 2000px;
     padding: 0 auto;
-    box-shadow:3px 5px 5px var(--saumon); 
+    /* box-shadow:3px 5px 5px var(--saumon);  */
     @media (max-width: 1080px) {
       padding: 0;
     }
