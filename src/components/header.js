@@ -1,5 +1,6 @@
 
 import React, {useState, useEffect} from "react"
+import Headroom from "react-headroom"
 import {FaBars, FaTimes} from 'react-icons/fa'
 import {NavLogo, Nav, HeaderContainer, MobileIcon, NavItem, NavLink, NavMenu} from '../components/headerElements'
 
@@ -28,7 +29,7 @@ const Header = () => {
 
   return(
   
-  
+  <Headroom disableInlineStyles="true">
     
     <Nav click={click} active={scroll}>
       <HeaderContainer>
@@ -58,7 +59,7 @@ const Header = () => {
         </NavMenu>
         </HeaderContainer>
     </Nav>
-
+  </Headroom>
   
 )
 }

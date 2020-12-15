@@ -59,14 +59,16 @@ const StyledProject = styled.section`
  
  @media screen and (min-width: 992px) {
     .project {
+        
      grid-template-columns: repeat(12, 1fr);
      align-items: center;
    }
     .project-info {
      border-radius: var(--radius);
-
+        
      text-align: center;
      z-index: 2;
+     
      grid-column: 8 / span 12;
      grid-row: 1 / 1;
      
@@ -86,6 +88,7 @@ const StyledProject = styled.section`
      height: 30rem;
      border-radius: 1rem;
      box-shadow: var(--noir);
+     z-index: 0;
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;

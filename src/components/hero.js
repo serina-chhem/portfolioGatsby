@@ -1,8 +1,9 @@
-import React from "react"
+import React, {useState} from "react"
 // import styles from "../styles/styles.scss"
 // import Image from "../components/image"
-import styled from 'styled-components'
+import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
 import Typical from 'react-typical'
+import Toggle from "./toggleDarkLight";
 
 
 
@@ -10,6 +11,7 @@ const StyledHero = styled.section`
     flex-direction: column;
     align-items: flex-start;
     min-height: auto;
+
     h1 {
         margin: 0 0 30px 4px;
         margin-top: 20px;
@@ -28,9 +30,11 @@ const StyledHero = styled.section`
     line-height: 1.8;
     font-weight: 150;
 }
-    h3{
-        color: var(--bleu-vert-fonce);
-    }
+   
+h3{
+    color: var(--bleu-vert-fonce);
+}
+
   
 `
 
@@ -40,15 +44,18 @@ const Hero = () => {
 
 
     return(
-    
-        <StyledHero>
-            <h3 className="medium-heading">Bienvenue ! Je suis Sérina,</h3>  
 
-           <Typical steps={['Une étudiante déterminée,', 200, 'Une étudiante déterminée, adaptable', 200, 'Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.', 200]} loop="4" wrapper="h1"/> 
+
+
+        <StyledHero>
+            <h3 className={"medium-heading"}>Bienvenue ! Je suis Sérina,</h3>  
+
+        <Typical steps={['Une étudiante déterminée,', 200, 'Une étudiante déterminée, adaptable', 200, 'Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.', 200]} loop="4" wrapper="h1"/> 
             <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>
-           
-        </StyledHero>
         
+        </StyledHero>
+
+       
       
        
    

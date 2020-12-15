@@ -6,9 +6,10 @@ export const Nav = styled.nav`
         display:flex;
         justify-content:center;
         align-items:center;
-        position:sticky;
+        /* position:relative; */
+        z-index: 99;
         top:0;
-        z-index: 999;
+        
         @media screen and (max-width: 960px){
             background:${({click})=>(click ? "#fff": "transparent")};
             transition: 0.8 all ease;
@@ -17,23 +18,19 @@ export const Nav = styled.nav`
         text-decoration: none;
         letter-spacing: 1.5px;
         font-family: var(--font);
-
         
        
         background:${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
-
        
     ` 
 
 export const HeaderContainer = styled.div`
-
-
     background-color: rgba( 215, 215, 215, 0.25 );
     box-shadow: 0 5px 25px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4.5px );
     -webkit-backdrop-filter: blur( 4.5px );
     border-radius: 10px;
-      
+    
     display:flex;
     /* background-color:var(--background); */
     /* background:linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100)); */
@@ -57,7 +54,6 @@ export const HeaderContainer = styled.div`
     @media screen and (max-width:960px){
       background-color:var(--bleu-vert);
       box-shadow:none; 
-
     }
     
    
@@ -116,8 +112,6 @@ export const HeaderContainer = styled.div`
         top:${({ click }) => (click ? "0" : "300vw")};
         transition: all 0.2s ease;
         background:var(--bleu-vert);
-
-
         justify-content:center;
     }
   `
@@ -131,7 +125,6 @@ export const HeaderContainer = styled.div`
     padding: 0 1.5rem;
     height:100%;
     font-size:1.1rem;
-
     @media screen and (max-width: 960px){
       align-items:center;
       padding:0 0;
