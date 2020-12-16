@@ -24,14 +24,11 @@ const StyledProject = styled.section`
         position: absolute;
     
     }
-    h4{
-        color:var(--saumon-clair)
+    h4, p{
+        color:var(--saumon)
     }
 
-    p{
-        color:var(--saumon-clair)
-    }
-
+  
   .background-text{
         margin-bottom: 8rem;
         align-items:center;
@@ -64,13 +61,19 @@ const StyledProject = styled.section`
      align-items: center;
    }
     .project-info {
-     border-radius: var(--radius);
-        
-     text-align: center;
-     z-index: 2;
-     
-     grid-column: 8 / span 12;
-     grid-row: 1 / 1;
+        /* border-radius: var(--radius); */
+
+        text-align: center;
+        z-index: 2;
+
+        background: rgba(251, 232, 231, 0.23 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 8px );
+        -webkit-backdrop-filter: blur( 8px );
+        border-radius: 10px;
+
+        grid-column: 8 / span 12;
+        grid-row: 1 / 1;
      
    }
    .project:nth-of-type(even) .project-image {
