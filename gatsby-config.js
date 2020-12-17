@@ -54,6 +54,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: { 
+        path: `${__dirname}/src/components/methods`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { 
         path: `${__dirname}/src/components/roles`,
       },
     },

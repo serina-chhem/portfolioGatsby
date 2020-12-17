@@ -12,7 +12,7 @@ const StyledHero = styled.section`
     align-items: flex-start;
     min-height: auto;
     .inner {
-    padding-top:40px;
+    padding-top:20px;
 
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -25,7 +25,7 @@ const StyledHero = styled.section`
 
     h1 {
         margin: 0 0 30px 4px;
-        margin-top: 20px;
+        margin-top: 10px;
         color: var(--bleu-vert);
         line-height: 1.5;
         font-size: 2.7rem;
@@ -97,8 +97,8 @@ const Hero = () => {
 
         <StyledHero >
             
-            <h3 className={"medium-heading"}>Bienvenue ! Je suis Sérina,</h3>  
-           
+            {/* <h3 className={"medium-heading"}>Bienvenue ! Je suis Sérina,</h3>   */}
+            <Typical steps={['Bien', 200, 'Bienvenue !', 200, 'Bienvenue ! Je suis', 200, 'Bienvenue ! Je suis Sérina,', 200]} loop="4" wrapper="h3"/> 
            <div className="inner"> 
            
             {/* <Typical steps={['Une étudiante déterminée,', 200, 'Une étudiante déterminée, adaptable', 200, 'Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.', 200]} loop="4" wrapper="h1"/>  */}

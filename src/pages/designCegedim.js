@@ -40,9 +40,6 @@ const StyledCegedim = styled.section`
             font-size:7rem;
            
         }
-        /* @media screen and (max-width:1200px){
-            grid-template-columns:1fr 1fr;
-        } */
 
         @media screen and (max-width:1060px){
             font-size:6rem;

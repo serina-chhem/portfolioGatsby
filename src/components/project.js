@@ -8,10 +8,13 @@ import Typical from 'react-typical'
 
 const StyledProject = styled.section`
 
-   padding-top: 4rem;
+    text-align:center;
+    position: relative;
+    padding-top: 2rem;
      .project {
         display: grid;
-        margin-bottom: 4rem;
+        margin-top:5rem;
+        /* margin-bottom: 1rem; */
     }
     .project-info {
         background: var(--bleu-vert-fonce);
@@ -19,46 +22,77 @@ const StyledProject = styled.section`
         border-bottom-left-radius: var(--radius);
         border-bottom-right-radius: var(--radius);
     }
-    h3{
-        
-        position: absolute;
     
-    }
     h4, p{
         color:var(--saumon)
     }
 
-  
-  .background-text{
-        margin-bottom: 8rem;
-        align-items:center;
-        font-size: 8rem;
-        font-weight: 700;
-        letter-spacing: 1.7rem;
-        color: var(--saumon-clair);
-        display: flex;
-        align-items: center;
-        text-align:center;
-        z-index: -100;
-        @media screen and (max-width:868px) {
-            font-size: 4rem;
-            margin-bottom: 3rem;
-            letter-spacing: 0.1rem;
+    h2{
+        margin:auto;
+        margin-top:5rem;
+        color:var(--saumon);
+        margin-left:20rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3rem;
+        position:absolute;
+        @media (max-width: 768px) {
+
+            margin:auto;
+            font-size: 2.5rem;
+            margin-top:5rem;
+            font-weight: normal;
+            margin-left:auto;
         }
-        @media screen and (max-width:1200px){
-            font-size:5rem;
-            margin-bottom: 4rem;
-            letter-spacing: 1rem;
-            }
+        @media (max-width: 368px) {
+            margin:auto;
+            font-size: 2rem;
+            margin-top:5rem;
+            font-weight: normal;
+            margin-left:auto;
+           
+        }
+       
+    }
+    h1{
+        
+        margin:auto;
+        margin-left:auto;
+        text-align:center;
+
+        font-style: normal;
+        font-weight: bolder;
+        letter-spacing:40px;
+        font-size: 8rem;
+        color:var(--saumon-clair);
+        @media (max-width: 768px) {
+
+            margin:auto;
+            margin-left:0px;
+            font-size:7rem;
+           
+        }
+        @media (max-width: 268px) {
+            margin:auto;
+            margin-left:0px;
+            font-size:3rem;
+           
+        }
+
+        @media screen and (max-width:1060px){
+            font-size:6rem;
+        }
 
     }
+
 
  
  @media screen and (min-width: 992px) {
     .project {
-        
+    
      grid-template-columns: repeat(12, 1fr);
      align-items: center;
+   
    }
     .project-info {
         /* border-radius: var(--radius); */
@@ -171,14 +205,18 @@ const projects = data.proj.edges.filter(({node}) => node );
 
     <StyledProject>
 
-    <Typical steps={['Mes', 10, 'Mes projets', 10, 'Mes projets en', 10, 'Mes projets en cours',100]} loop="2" wrapper="h3"/> 
+    {/* <Typical steps={['Mes', 10, 'Mes projets', 10, 'Mes projets en', 10, 'Mes projets en cours',100]} loop="2" wrapper="h3"/>  */}
 
     
 
         {/* <h3 className="medium-heading">Mes projets en cours</h3> */}
 
-        
-            <p className="background-text">Portfolio</p>
+    
+        <h2>Projets en cours</h2>
+   
+        <h1 className="textwrap" >Portfolio</h1>
+  
+       
 
 
             {projects && 

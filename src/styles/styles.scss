@@ -38,19 +38,6 @@ body{
 }
 
 
-.body-dark{
-  font-family: var(--font);
-  font-size: 16px;
-  color:var(--saumon-clair);
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  box-sizing: border-box;
-
-}
-
 .main{
   margin: auto auto;
   padding: auto auto;
@@ -59,19 +46,12 @@ body{
   background-color: var(--background);
 }
 
-.main-dark{
-  margin: auto auto;
-  padding: auto auto;
-  box-sizing: border-box;
-  border: none;
-  background-color: var(--bleu-fonce);
-}
 
 section{
     margin: 0 auto;
     padding: 25px 0;
     max-width: 950px;
-    background-color: var(--background);
+    // background-color: var(--background);
 
     @media (max-width: 768px) {
       padding: 40px 0;
@@ -159,7 +139,9 @@ section{
 }
 
 .textwrap{
-  align-items: center;
+  // align-items: center;
+  text-align: center;
+
 }
 
 h3{
@@ -197,23 +179,6 @@ h6 {
   
   font-size: clamp(20px, 4vw, 30px);
 
-}
-
-
-.background-text{
-  // margin: auto;
-  margin-bottom: 4rem;
-  font-size: 10rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: var(--saumon-clair);
-  display: flex;
-  align-items: center;
-  text-align:center;
-  z-index: 1;
-  @media screen and (max-width:868px) {
-    font-size: 4rem;
-  }
 }
 
 p{
@@ -359,12 +324,16 @@ input, textarea {
   margin: 0 auto;
   max-width: 1170px;
 }
+
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
   }
 }
 
+
+//Header
 .headroom {
   top: 0;
   left: 0;
@@ -385,4 +354,30 @@ input, textarea {
 .headroom--pinned {
   position: fixed;
   transform: translateY(0%);
+}
+//Header
+
+
+
+.background-text{
+  margin-bottom: 8rem;
+  
+  font-size: 8rem;
+  font-weight: 700;
+  letter-spacing: 1.7rem;
+  color: var(--saumon-clair);
+  display: flex;
+  // position: absolute;
+  z-index: 0;
+  @media screen and (max-width:868px) {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      letter-spacing: 0.1rem;
+  }
+  @media screen and (max-width:1200px){
+      font-size:5rem;
+      margin-bottom: 4rem;
+      letter-spacing: 1rem;
+      }
+
 }

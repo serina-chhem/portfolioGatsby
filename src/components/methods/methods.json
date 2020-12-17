@@ -1,0 +1,38 @@
+[
+    {
+        "img":"../../images/imagesAboutMe/Comprendre.svg",
+        "alt":"Comprendre",
+        "name": "Comprendre",
+        "description":"Je me mets à la place des utilisateurs pour comprendre leurs besoins. J'observe leurs comportements, leurs points de douleurs."
+    },
+    {
+        "img":"../../images/imagesAboutMe/Définir.svg",
+        "alt":"Définir",
+        "name": "Définir",
+        "description":"Je définie le problème et ses causes grâce à la méthode des 5 « Pourquoi » pour ensuite établir mes hypothèses."
+    },
+    {
+        "img":"../../images/imagesAboutMe/Imaginer.svg",
+        "alt":"Imaginer",
+        "name": "Imaginer",
+        "description":"Il s'agit ici de brainstormer toutes les idées possibles répondant au problème, avec la méthode Crazy 8 ou SCAMPER."
+    },
+    {
+        "img":"../../images/imagesAboutMe/Prototyper.svg",
+        "alt":"Prototyper",
+        "name": "Prototyper",
+        "description":"On peut maintenant parler de MVP. Je tente de faire ressembler mon prototype (haute ou basse fidélité) à ma solution."
+    },
+    {
+        "img":"../../images/imagesAboutMe/Tester.svg",
+        "alt":"Tester",
+        "name": "Tester",
+        "description":"Je teste le prototype pour récolter les feedbacks. Ces feedbacks me permettent de valider ou non mes hypothèses."
+    },
+    {
+        "img":"../../images/imagesAboutMe/Déployer.svg",
+        "alt":"Déployer",
+        "name": "Déployer",
+        "description":"Je déploie ma première release (MVP 1) avec mes principales user stories, et je développe la solution avec l'aide des développeurs."
+    }
+]
