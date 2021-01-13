@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import Typical from 'react-typical'
 import { useStaticQuery, graphql } from 'gatsby';
-import BackgroundImage from "gatsby-background-image";
 
 
 
@@ -46,6 +45,12 @@ h3{
     color: var(--bleu-vert-fonce);
 }
 
+span{
+    font-size: 2.7rem;
+        font-weight: 600;
+    color: var(--saumon);
+}
+
   
 `
 
@@ -64,8 +69,8 @@ const StyledPic = styled.div`
       position: relative;
       margin:auto auto;
       mix-blend-mode: normal;
-      width:27rem;
-      height:27rem;
+      width:30rem;
+      height:30rem;
       
     }
 
@@ -97,20 +102,19 @@ const Hero = () => {
 
         <StyledHero >
             
-            {/* <h3 className={"medium-heading"}>Bienvenue ! Je suis Sérina,</h3>   */}
-            <Typical steps={['Bien', 200, 'Bienvenue !', 200, 'Bienvenue ! Je suis', 200, 'Bienvenue ! Je suis Sérina,', 200]} loop="4" wrapper="h3"/> 
-           <div className="inner"> 
-           
-            {/* <Typical steps={['Une étudiante déterminée,', 200, 'Une étudiante déterminée, adaptable', 200, 'Une étudiante déterminée, adaptable et prête à créer des expériences utilisateurs uniques.', 200]} loop="4" wrapper="h1"/>  */}
-            <h1>
-                Déterminée, adaptable et prête à créer des expériences utilisateurs uniques.
-            </h1>
+            <h3 className={"medium-heading"}>Bienvenue ! Je suis </h3>  
+            {/* <Typical steps={['Bi', 300, 'Bienvenue !', 500, 'Bienvenue ! Je suis', 200, 'Bienvenue ! Je suis Sérina,', 200]} loop={Infinity} wrapper="h3"/>  */}
+         
+            <Typical steps={['Sérina', 1000, 'déterminée,', 1000, 'adaptable', 1000, 'passionnée', 1000]} loop={Infinity} wrapper="h1"/> 
+            {/* <h1>
+                Une étudiante <span>déterminée, adaptable </span>  et prête à <span>créer des expériences utilisateurs uniques. </span>
+            </h1> */}
             
-            <StyledPic>
+            {/* <StyledPic>
                 <img className = "img" src={data.file.publicURL} alt={data.base}/>
-            </StyledPic>
+            </StyledPic> */}
            
-            </div>
+         
             <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>
             
         </StyledHero>
