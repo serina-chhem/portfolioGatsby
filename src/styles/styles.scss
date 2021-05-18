@@ -4,14 +4,15 @@
 :root{
   --font:'Euclid Circular B', sans-serif;
   --radius: 0.25rem;
-  --background:#fff5ea;
+  // --background:#fff5ea;
+  
   // --background:linear-gradient(#e66465, #9198e5);
   --blanc: #fff;
   --noir:#000;
   --saumon:#ac70b1;
   --saumon-clair:rgb(251, 232, 231);
   --bleu-vert:#70adb5;
-  --bleu-vert-fonce:rgb(64, 112, 136);
+  --bleu-vert-fonce:#407088;
   --bleu:#0266B9;
   --bleu-clair:#1789FC;
   --bleu-fonce:#132743;
@@ -26,7 +27,7 @@
 
 body{
     font-family: var(--font);
-    font-size: 16px;
+    font-size: 14px;
     color:var(--bleu-vert);
     margin: 0;
 
@@ -43,7 +44,7 @@ body{
   padding: auto auto;
   box-sizing: border-box;
   border: none;
-  background-color: var(--background);
+  background-color: var(--blanc);
 }
 
 
@@ -259,7 +260,7 @@ span{
   padding-bottom: 2rem;
   border: none;
   margin-bottom: 1.25rem;
-  background: var(--background);
+  background: var(--blanc);
   border-radius: 0.25rem;;
   // text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -292,7 +293,7 @@ a {
   cursor: pointer;
   &:hover,
   &:focus {
-    color: var(--bleu-brillant);
+    color: var(--saumon);
   }
  
 }

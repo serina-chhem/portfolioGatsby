@@ -25,15 +25,12 @@ export const Nav = styled.nav`
     ` 
 
 export const HeaderContainer = styled.div`
-    background-color: rgba( 215, 215, 215, 0.25 );
-    box-shadow: 0 5px 25px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4.5px );
-    -webkit-backdrop-filter: blur( 4.5px );
-    border-radius: 10px;
+    background-color: var(--blanc);
+    
+    /* border-radius: 10px; */
     
     display:flex;
-    /* background-color:var(--background); */
-    /* background:linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100)); */
+   
     justify-content:space-between;
     height:70px;
     width: 100%;
@@ -41,7 +38,7 @@ export const HeaderContainer = styled.div`
     margin: 0 auto;
     max-width: 2000px;
     padding: 0 auto;
-    /* box-shadow:3px 5px 5px var(--saumon);  */
+   
     @media (max-width: 1080px) {
       padding: 0;
     }
@@ -52,8 +49,7 @@ export const HeaderContainer = styled.div`
       padding: 0;
     }
     @media screen and (max-width:960px){
-      background-color:var(--bleu-vert);
-      box-shadow:none; 
+      background-color:var(--blanc);
     }
     
    
@@ -66,24 +62,23 @@ export const HeaderContainer = styled.div`
         text-transform: uppercase;
         justify-content: space-between;
         height: 70px ;
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 700;
         text-decoration: none;
         letter-spacing: 1.5px;
-        color: var(--saumon);
         margin-left:15px;
-        
   
   `
 
   export const MobileIcon = styled.div`
     display:none;
-    color: var(--saumon);
+   
     @media screen and (max-width: 960px){
         display:block;
         position:absolute;
         top:0;
         right:0;
+        z-index: 2;
         transform:translate(-100%, 60%);
         font-size:1.9rem;
         cursor: pointer;
@@ -104,28 +99,33 @@ export const HeaderContainer = styled.div`
         bottom: 0;
         right: 0;
         padding: 50px 10px;
-        width: min(75vw, 400px);
+        width: min(50vw, 250px);
         height: 100vh;
-        
-        z-index: -999;
+       
+        z-index: 1;
      
-        top:${({ click }) => (click ? "0" : "300vw")};
-        transition: all 0.2s ease;
-        background:var(--bleu-vert);
+        top:${({ click }) => (click ? "0" : "2000vw")};
+        transition: all 0.25s ease;
+       
+        background: rgba(255, 255, 255, 0.6 );
+        box-shadow: 0 8px 10px 0 rgba(165, 164, 178, 0.37 );
+        backdrop-filter: blur( 8px );
         justify-content:center;
     }
   `
 
 
   export const NavLink = styled(Link)`
-    color: var(--saumon);
+
     display: flex;
     align-items:center;
     text-decoration:none;
     padding: 0 1.5rem;
     height:100%;
     font-size:1.1rem;
+    
     @media screen and (max-width: 960px){
+     
       align-items:center;
       padding:0 0;
       text-align: center;
@@ -134,7 +134,8 @@ export const HeaderContainer = styled.div`
       display:table;
       
       &:hover{
-        color:var(--bleu-brillant);
+        color:var(--saumon);
+        
         transition: all 0.3s ease;
       }
     }

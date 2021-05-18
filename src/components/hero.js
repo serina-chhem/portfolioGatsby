@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import styled from 'styled-components'
-
 import Typical from 'react-typical'
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -115,7 +114,9 @@ const Hero = () => {
             </StyledPic> */}
            
          
-            <h2 className="medium-heading">Si vous recherchez une stagiaire en fin d’études à Paris, en tant que UX/UI Designer, ou Product Owner, je serais ravie de vous aider à maximiser la valeur de votre produit !</h2>
+            <h2 className="medium-heading">Bientôt jeune diplômée, je suis à la recherche de mon premier emploi en tant que que Product Owner dans le domaine de la tech.
+            Je serai disponible à partir de Septembre 2021 à l'issue de mon stage de fin d'études.
+             </h2>
             
         </StyledHero>
 

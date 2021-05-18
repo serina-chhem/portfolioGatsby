@@ -14,7 +14,7 @@ const Header = () => {
   const handleClick= () => setClick(!click)
 
   const changeNav = () => {
-    if(window.scrollY >= 70){
+    if(window.scrollY >= 60){
       setScroll(true)
     }
     else{
@@ -35,15 +35,17 @@ const Header = () => {
       <HeaderContainer>
         <NavLogo to = "/" >
           <a >
-          SÉRINA CHHEM
+          Sérina Chhem
           </a>
         </NavLogo>
 
         <MobileIcon onClick={handleClick}>
-          {click ? <FaTimes/> : <FaBars/>}
+            {click ? <FaTimes/> : <FaBars/>}
         </MobileIcon>
 
         <NavMenu onClick={handleClick} click={click}>
+
+
           <NavItem>
             <NavLink to = "/aboutme">À propos</NavLink>
           </NavItem>
