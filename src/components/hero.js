@@ -9,6 +9,9 @@ const StyledHero = styled.section`
     flex-direction: column;
     align-items: flex-start;
     min-height: auto;
+  
+    
+
     .inner {
     padding-top:20px;
 
@@ -20,6 +23,7 @@ const StyledHero = styled.section`
     }
     
   }
+
 
     h1 {
         margin: 0 0 30px 4px;
@@ -55,38 +59,10 @@ span{
 
 
 
-const StyledPic = styled.div`
-  position: relative;
-  max-width: auto;
-  @media (max-width: 768px) {
-    margin: 50px auto 0;
-    width: 70%;
-  }
-
-  .img {
-        filter: none;
-      position: relative;
-      margin:auto auto;
-      mix-blend-mode: normal;
-      width:30rem;
-      height:30rem;
-      
-    }
-
-  .wrapper {
-    display: block;
-    position: relative;
-    width: 100%;
-   
-  }
-
-`
-
-
 const Hero = () => {
     const data = useStaticQuery(graphql`
     {
-        file(relativePath: {eq: "christmasHero.svg"}) {
+        file(relativePath: {eq: "linearBackground.svg"}) {
             extension
             id
             publicURL
@@ -98,7 +74,7 @@ const Hero = () => {
     return(
 
 
-
+      
         <StyledHero >
             
             <h3 className={"medium-heading"}>Bienvenue ! Je suis </h3>  
@@ -113,13 +89,13 @@ const Hero = () => {
                 <img className = "img" src={data.file.publicURL} alt={data.base}/>
             </StyledPic> */}
            
-         
-            <h2 className="medium-heading">Bientôt jeune diplômée, je suis à la recherche de mon premier emploi en tant que que Product Owner dans le domaine de la tech.
-            Je serai disponible à partir de Septembre 2021 à l'issue de mon stage de fin d'études.
+           
+            <h2 className="medium-heading">Fraichement diplômée, j'ai développé mon propre site pour me démarquer et m'exprimer librement.
+            Sur ce site se trouvent les études de cas sur lesquels je travaille. Je partagerai également mon opinion sur des sujets qui attirent mon attention.
              </h2>
             
         </StyledHero>
-
+      
        
       
        

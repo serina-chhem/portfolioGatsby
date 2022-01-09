@@ -30,7 +30,7 @@ body{
     font-size: 14px;
     color:var(--bleu-vert);
     margin: 0;
-
+    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -44,7 +44,9 @@ body{
   padding: auto auto;
   box-sizing: border-box;
   border: none;
-  background-color: var(--blanc);
+  // background-color: var(--blanc);
+  // background: url('../images/linearBackground.svg') no-repeat top left;
+  //   background-size: contain;
 }
 
 
@@ -53,7 +55,7 @@ section{
     padding: 25px 0;
     max-width: 950px;
     // background-color: var(--background);
-
+    
     @media (max-width: 768px) {
       padding: 40px 0;
     }

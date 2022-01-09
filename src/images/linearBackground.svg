@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1072" viewBox="0 0 1920 1072">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e0c6eb"/>
+      <stop offset="1" stop-color="#7e9edb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#786fb3"/>
+      <stop offset="0.394" stop-color="#896fb3"/>
+      <stop offset="1" stop-color="#9a6fb3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cabedb"/>
+      <stop offset="1" stop-color="#7472b5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cabedb"/>
+      <stop offset="0.212" stop-color="#d9c9db"/>
+      <stop offset="1" stop-color="#e6cdd9"/>
+    </linearGradient>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1072"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1072" fill="#fff"/>
+    <rect id="Rectangle_95" data-name="Rectangle 95" width="1920" height="1185" fill="url(#linear-gradient)"/>
+    <path id="Tracé_451" data-name="Tracé 451" d="M147.649,926.463c928.22,145.69,777.661-412.1,1423-215s838.64-89.718,1167-63,1296,576,1296,576" transform="translate(-1157.649 -34.463)" fill="url(#linear-gradient-2)"/>
+    <path id="Tracé_450" data-name="Tracé 450" d="M148.1,926.334c810.253,145.69,678.677-412.1,1242-215s731.371-89.718,1018-63,1132,576,1132,576" transform="translate(-883.096 52.666)" fill="url(#linear-gradient-3)"/>
+    <path id="Tracé_452" data-name="Tracé 452" d="M147.737,953.745c758,159.741,635-452.111,1162-236s684.854-98.3,953-69,1058,631,1058,631" transform="translate(-773.737 108.255)" fill="url(#linear-gradient-4)"/>
+    <path id="Tracé_449" data-name="Tracé 449" d="M147.742,1035.215c810.253,202.234,678.677-571.6,1242-298s732.371-125.088,1019-88,1131,799,1131,799" transform="translate(-910.742 185.785)" fill="#fff"/>
+    <path id="Tracé_453" data-name="Tracé 453" d="M149,1074.283V1150.2H2056.065l18.4-18.816" transform="translate(-148 -68)" fill="none"/>
+    <path id="Tracé_454" data-name="Tracé 454" d="M149,68V1196.719H2075.844V68Z" transform="translate(-148 -68)" fill="none"/>
+  </g>
+</svg>

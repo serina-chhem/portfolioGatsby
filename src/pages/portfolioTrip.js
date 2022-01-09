@@ -85,7 +85,7 @@ flex-direction: column;
 `
 const StyledPic = styled.div`
    margin:50px auto;
-  max-width: 900px;
+  max-width: 500px;
   text-align:center;
   
   @media (max-width: 768px) {
