@@ -91,7 +91,7 @@ const Hero = () => {
            
            
             <h2 className="medium-heading">Fraichement diplômée, j'ai développé mon propre site pour me démarquer et m'exprimer librement.
-            Sur ce site se trouvent les études de cas sur lesquels je travaille. Je partagerai également mon opinion sur des sujets qui attirent mon attention.
+            Sur ce site se trouve une partie de ma personnalité à travers mes travaux académiques et personnels.
              </h2>
             
         </StyledHero>
